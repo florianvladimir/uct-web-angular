@@ -1,0 +1,12 @@
+<mat-card class="info-card">
+  <mat-card-header>
+    <mat-card-title class="info-card-header">{{information.textInformation.title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}">
+  <mat-card-content>
+    <p>{{information.textInformation.text}}</p>
+  </mat-card-content>
+  <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
+    <a href="{{information.buttonInformation.link}}" target="_blank"><button mat-stroked-button color="primary">{{information.buttonInformation.value}}</button></a>
+  </mat-card-actions>
+</mat-card>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TEXTWELCOME} from './text-welcome';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,5 @@ export class AppComponent {
   pic1 = '../../../assets/DSC08248.jpg';
   pic2 = '../../../assets/IMG2237.jpg';
   pic3 = '../../../assets/foto2.png';
+  textWelcome = TEXTWELCOME;
 }

@@ -1,0 +1,15 @@
+.info-card {
+  margin-top: 10px;
+}
+.info-card-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mat-card-image{
+  max-height: 300px;
+  box-shadow: 1px 0px 20px 0px #edecec;
+}
+
+.info-card-footer{
+  padding-left: 16px;
+}

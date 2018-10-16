@@ -4,7 +4,7 @@ import {style} from '@angular/animations';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-parallax-scroll',
+  selector: 'parallax-scroll',
   templateUrl: './parallax-scroll.component.html',
   styleUrls: ['./parallax-scroll.component.css'],
 })
