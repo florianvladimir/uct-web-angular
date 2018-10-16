@@ -1,8 +1,4 @@
-<div class="parallax">
-  <h1>
-    <img class="logo" src="../assets/logo_d_1.png">
-  </h1>
-</div>
+<app-parallax-scroll *ngIf="pic1" [backgroundPicture]="pic1" [logoPath]="'../assets/logo_d_1.png'"></app-parallax-scroll>
 <div style="width: 100%; height: 100vh; background-color: white; color: black">
   <p>Uphill Champion Thun
     Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups: Der Vesuv. Der Weg dorthin ist schwer.
@@ -11,8 +7,13 @@
     zwei anderen Etappen gibt es mehr Höhenmeter und eine «Bergankunft». Oben angekommen wartet auf die Teilnehmer nebst
     sauren Beinen und einem rasenden Herz eine schöne Aussicht auf die mächtige Bergwelt, die Stadt und den See.</p>
 </div>
-<div class="parallax" style="height: 300px">
-  <!--<h1>-->
-    <!--<img class="logo" src="../assets/logo_d_1.png">-->
-  <!--</h1>-->
+<app-parallax-scroll *ngIf="pic2" [backgroundPicture]="pic2" [title]="'Uphill Champion Thun'"></app-parallax-scroll>
+<div style="width: 100%; height: 100vh; background-color: white; color: black">
+  <p>Uphill Champion Thun
+    Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups: Der Vesuv. Der Weg dorthin ist schwer.
+    Drei harte und steile Strecken warten darauf, bis sich die ersten Läufer des Berglauf-Cups an ihnen die Zähne
+    ausbeissen. Die erste Etappe durch die wunderschöne Cholere-Schlucht ist eine kurze aber intensive Etappe. Bei den
+    zwei anderen Etappen gibt es mehr Höhenmeter und eine «Bergankunft». Oben angekommen wartet auf die Teilnehmer nebst
+    sauren Beinen und einem rasenden Herz eine schöne Aussicht auf die mächtige Bergwelt, die Stadt und den See.</p>
 </div>
+<app-parallax-scroll *ngIf="pic3" [backgroundPicture]="pic3" [logoPath]="'../assets/logo_d_1.png'"></app-parallax-scroll>

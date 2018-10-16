@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {ParallaxModule} from 'ngx-parallax';
+import {ParallaxScrollComponent} from './parallax/parallax-scroll/parallax-scroll.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParallaxScrollComponent
   ],
   imports: [
     BrowserModule,
