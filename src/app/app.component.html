@@ -1,5 +1,5 @@
-<parallax-scroll *ngIf="pic3" [backgroundPicture]="pic3" [logoPath]="'../assets/logo_d_1.png'"></parallax-scroll>
-<div style="width: 100%; min-height: 100vh; background-color: white; color: black; padding: 20px">
+<parallax-scroll *ngIf="pic2" [backgroundPicture]="pic2" [logoPath]="'../assets/logo_d_1.png'"></parallax-scroll>
+<div class='main-content' style="">
 
   <div class="container">
     <div class="row">
@@ -10,10 +10,21 @@
   </div>
 
 </div>
-<parallax-scroll *ngIf="pic2" [backgroundPicture]="pic2" [title]="'Uphill Champion Thun'"></parallax-scroll>
-<div style="width: 100%; height: 100vh; background-color: white; color: black">
+<parallax-scroll *ngIf="pic3" [backgroundPicture]="pic3" [title]="'Team'"></parallax-scroll>
+<div class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/nici.jpg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/simi.jpg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/mara.jpeg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/flo.jpg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/andri.jpg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/joey.jpg'"></app-contact-card></div>
+      <div class="col-xl-6"><app-contact-card [photo]="'../assets/team/riina.jpg'"></app-contact-card></div>
+    </div>
+  </div>
 
 </div>
 <parallax-scroll *ngIf="pic1" [backgroundPicture]="pic1" [logoPath]="'../assets/logo_d_1.png'"></parallax-scroll>
-<div style="width: 100%; height: 100vh; background-color: white; color: black">
+<div class="main-content">
 </div>

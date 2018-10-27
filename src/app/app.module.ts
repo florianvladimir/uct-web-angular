@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {ParallaxModule} from 'ngx-parallax';
-import {ParallaxScrollComponent} from './parallax/parallax-scroll/parallax-scroll.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule} from '@angular/material';
 import {InformationCardComponent} from './custom-components/information-card/information-card.component';
@@ -12,16 +11,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InformationCardComponent,
-    ParallaxScrollComponent,
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    NgbModule
+    CustomComponentsModule,
+    NgbModule,
+    BrowserModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

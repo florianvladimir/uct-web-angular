@@ -12,5 +12,5 @@ export interface InputButtonInfo {
 
 export interface DataInformationCard {
   textInformation: TextInformationCard;
-  buttonInformation: InputButtonInfo;
+  buttonInformation: InputButtonInfo[];
 }

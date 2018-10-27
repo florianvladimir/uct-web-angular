@@ -7,6 +7,8 @@
     <p>{{information.textInformation.text}}</p>
   </mat-card-content>
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
-    <a href="{{information.buttonInformation.link}}" target="_blank"><button mat-stroked-button color="primary">{{information.buttonInformation.value}}</button></a>
+    <ng-container *ngFor="let btn of information.buttonInformation">
+      <a href="{{btn.link}}" target="_blank"><button mat-stroked-button color="primary" class="btn-link-card">{{btn.value}}</button></a>
+    </ng-container>
   </mat-card-actions>
 </mat-card>

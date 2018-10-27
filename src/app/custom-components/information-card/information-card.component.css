@@ -1,5 +1,7 @@
 .info-card {
   margin-top: 10px;
+  min-height: 580px;
+  white-space: pre-line !important;
 }
 .info-card-header {
   font-size: 20px;
@@ -12,4 +14,8 @@
 
 .info-card-footer{
   padding-left: 16px;
+}
+
+.btn-link-card{
+  margin-right: 5px;
 }
