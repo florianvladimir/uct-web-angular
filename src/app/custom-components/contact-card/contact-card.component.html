@@ -1,12 +1,10 @@
 <div class="contact-card">
-  <!--<div class="contact-card-pic" style="background: url(./../../../assets/team/nici.jpg) no-repeat center;">-->
-  <!--</div>-->
-  <div class="contact-card-pic" [style.background-image]='bla'>
+  <div class="contact-card-pic" [style.background-image]='photoPath'>
   </div>
 
   <div class="contact-card-text">
-    <h4 class="contact-card-title">Webdesigner</h4>
-    <h3 class="contact-card-title">Florian Moser</h3>
-    <p>Unser Super-Joker im Team mit seinen Kontakten in der Laufszene und Sponsoren. Als einer der schnellsten Läufer der Schweiz setzt er die Richtzeiten auf den drei Strecken. Seine Zeiten gilt es zu schlagen!</p>
+    <h4 class="contact-card-title">{{cardInformation.subTitle}}</h4>
+    <h3 class="contact-card-title">{{cardInformation.title}}</h3>
+    <p>{{cardInformation.text}}</p>
   </div>
 </div>

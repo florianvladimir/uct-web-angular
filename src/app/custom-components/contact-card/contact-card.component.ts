@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 import {element} from 'protractor';
+import {ContactCardInformation} from './model/contact-card-text.interface';
 
 @Component({
   selector: 'app-contact-card',
@@ -12,11 +13,11 @@ export class ContactCardComponent implements OnInit {
   constructor(private sanitization: DomSanitizer) { }
 
   @Input()
-  private photo: string;
-  bla;
+  public cardInformation: ContactCardInformation;
+  photoPath;
 
   ngOnInit() {
-    this.bla = this.sanitization.bypassSecurityTrustStyle(`url(${this.photo})`);
+    this.photoPath = this.sanitization.bypassSecurityTrustStyle(`url(${this.cardInformation.photoPath})`);
   }
 
 }
