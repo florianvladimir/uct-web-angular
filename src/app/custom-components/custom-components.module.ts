@@ -17,7 +17,7 @@ import {ParallaxScrollComponent} from './parallax-scroll/parallax-scroll.compone
     MatButtonModule,
     NgbModule
   ],
-  declarations: [InformationCardComponent, ContactCardComponent, ParallaxScrollComponent],
-  exports: [InformationCardComponent, ContactCardComponent, ParallaxScrollComponent]
+  declarations: [InformationCardComponent, ContactCardComponent],
+  exports: [InformationCardComponent, ContactCardComponent]
 })
 export class CustomComponentsModule { }

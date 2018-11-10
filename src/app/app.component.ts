@@ -7,9 +7,9 @@ import {CARDTEAM, TEXTWELCOME} from './text-welcome';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  pic1 = '../../../assets/DSC08248.jpg';
-  pic2 = '../../../assets/IMG2237.jpg';
-  pic3 = '../../../assets/finish.jpg';
+  pic1 = './assets/DSC08248.jpg';
+  pic2 = './assets/IMG2237.jpg';
+  pic3 = './assets/finish.jpg';
   textWelcome = TEXTWELCOME;
   informationTeam = CARDTEAM;
 }
