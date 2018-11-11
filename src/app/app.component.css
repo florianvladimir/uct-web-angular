@@ -3,7 +3,7 @@
   min-height: 100vh;
   background-color: white;
   color: black;
-  padding: 20px
+  padding: 20px 0;
 }
 
 .parallax-window {
@@ -21,4 +21,17 @@
   text-align: center;
   padding-top: 400px;
   margin-top: 0;
+}
+
+.bigTxt{
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax-window h1{
+    padding-top: 20vh;
+  }
+  .bigTxt{
+    font-size: 40px;
+  }
 }

@@ -1,0 +1,39 @@
+#datcont{
+  width: 810px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: auto;
+  margin-bottom: 30px;
+
+}
+.datum{
+  height: 100%;
+  width: 220px;
+  background-color: transparent;
+  border: 5px solid;
+  border-color: black;
+  float: left;
+  margin: 0 20px;
+
+}
+
+.hDat{
+  text-align: center;
+  font-size: 4em;
+  margin: 0;
+}
+
+
+.txtDat{
+  text-align: center;
+  font-size: 2em;
+  color: black;
+
+}
+
+.headerDat{
+  background-color: rgb(255,100,100);
+  width: 100%;
+  color: white;
+
+}

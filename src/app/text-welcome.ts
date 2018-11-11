@@ -16,6 +16,10 @@ export const TEXTWELCOME: DataInformationCard[] = [
     buttonInformation: [
       {
         link: '',
+        value: 'UCT 2019'
+      },
+      {
+        link: '',
         value: 'zum Team'
       }
     ]
