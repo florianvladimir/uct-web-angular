@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {CARDTEAM, TEXTWELCOME} from './text-welcome';
+import {CARDTEAM, RACEDATE, TEXTWELCOME} from './text-welcome';
+
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,5 @@ export class AppComponent {
   pic3 = './assets/finish.jpg';
   textWelcome = TEXTWELCOME;
   informationTeam = CARDTEAM;
+  informationDate = RACEDATE;
 }

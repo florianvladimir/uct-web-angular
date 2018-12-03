@@ -119,4 +119,25 @@ export const CARDTEAM: ContactCardInformation[] = [
   }
   ];
 
+export const RACEDATE: DateCardInformation[] = [
+  {
+    date: new Date(2019, 6, 19),
+    etappe: 'Etappe 1',
+    title: ''
+  },
+
+  {
+    date: new Date(2019, 6, 20),
+    etappe: 'Etappe 2',
+    title: ''
+  },
+
+  {
+    date: new Date(2019, 6, 21),
+    etappe: 'Etappe 3',
+    title: ''
+  }
+];
+
 import {DataInformationCard, TextInformationCard} from './custom-components/information-card/model/data-information-card.interface';
+import {DateCardInformation} from './custom-components/date-card/model/date-card-information.interface';

@@ -27,6 +27,9 @@
   font-size: 80px;
 }
 
+
+
+
 @media only screen and (max-width: 600px) {
   .parallax-window h1{
     padding-top: 20vh;

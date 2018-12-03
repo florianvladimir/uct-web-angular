@@ -1,25 +1,27 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {ParallaxModule} from 'ngx-parallax';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule} from '@angular/material';
-import {InformationCardComponent} from './custom-components/information-card/information-card.component';
 import {CustomComponentsModule} from './custom-components/custom-components.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import localeDECH from '@angular/common/locales/de-CH';
+import {registerLocaleData} from '@angular/common';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+registerLocaleData(localeDECH);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     CustomComponentsModule,
     NgbModule,
-    BrowserModule
-
+    BrowserModule,
+    FontAwesomeModule
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'de-CH' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

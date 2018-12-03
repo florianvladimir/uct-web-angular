@@ -14,14 +14,11 @@
 <!--UCT2019-->
 <div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG2237.jpg" style="height: 80vh"><h1 class="bigTxt">Uphill Champion Thun - 2019</h1></div>
 <div class="main-content">
-  <!--<div class="container">-->
-    <!--<div class="row">-->
-      <!--<ng-container *ngFor="let data of informationTeam">-->
-        <!--<div class="col-xl-6"><app-contact-card [cardInformation]="data"></app-contact-card></div>-->
-      <!--</ng-container>-->
-    <!--</div>-->
-  <!--</div>-->
-  <date-card></date-card>
+  <div class="container">
+    <div class="row">
+      <date-card *ngFor="let data of informationDate" [cardInformation]="data" class="col-4"></date-card>
+    </div>
+  </div>
 </div>
 
 
@@ -39,6 +36,11 @@
 </div>
 
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG2237.jpg" style="height: 100vh"><h1><img src="../assets/logo_d_1.png" class="logo"></h1></div>
-<div class="main-content">
+<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG2237.jpg" style="height: 100vh; position:relative;">
+  <app-footer></app-footer>
 </div>
+
+
+
+
+

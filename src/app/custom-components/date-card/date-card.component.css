@@ -7,14 +7,10 @@
 
 }
 .datum{
-  height: 100%;
-  width: 220px;
   background-color: transparent;
-  border: 5px solid;
-  border-color: black;
-  float: left;
-  margin: 0 20px;
-
+  border: 5px solid black;
+  box-sizing: border-box;
+  padding: 0 !important;
 }
 
 .hDat{
@@ -35,5 +31,36 @@
   background-color: rgb(255,100,100);
   width: 100%;
   color: white;
+}
 
+
+@media only screen and (max-width: 800px) {
+  .col-4{
+    padding: 0 2px;
+  }
+  .hDat{
+    font-size: 3em;
+  }
+  .txtDat{
+    font-size: 1.5em;
+  }
+  .datum{
+    border: 2px solid;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .col-4{
+    padding: 0 2px;
+  }
+  .hDat{
+    font-size: 2em;
+  }
+  .txtDat{
+    font-size: 1em;
+  }
+  .datum{
+    border: 2px solid;
+  }
 }

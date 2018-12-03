@@ -1,23 +1,7 @@
-<div id="datcont">
-    <div id="datl" class="datum">
-      <div class="headerDat">
-        <p class="hDat">26</p>
-        <p class="txtDat">Juni</p>
-      </div>
-      <p class="txtDat">Etappe 1:<br>Cholere</p>
-    </div>
-    <div id="datm" class="datum">
-      <div class="headerDat">
-        <p class="hDat">28</p>
-        <p class="txtDat">Juni</p>
-      </div>
-      <p class="txtDat">Etappe 2:<br>Haltenegg</p>
-    </div>
-    <div id="datr" class="datum">
-      <div class="headerDat">
-        <p class="hDat">29</p>
-        <p class="txtDat">Juni</p>
-      </div>
-      <p class="txtDat">Etappe 3:<br>Vesuv</p>
-    </div>
+<div class="datum">
+  <div class="headerDat">
+    <p class="hDat">{{cardInformation.date | date: 'd'}}</p>
+    <p class="txtDat">{{cardInformation.date | date: 'MMMM'}}</p>
+  </div>
+  <p class="txtDat">{{cardInformation.etappe}}<br>{{cardInformation.title}}</p>
 </div>
