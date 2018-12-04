@@ -121,19 +121,20 @@ export const CARDTEAM: ContactCardInformation[] = [
 
 export const RACEDATE: DateCardInformation[] = [
   {
-    date: new Date(2019, 6, 19),
+    // Month starts with 0
+    date: new Date(2019, 5, 19),
     etappe: 'Etappe 1',
     title: ''
   },
 
   {
-    date: new Date(2019, 6, 20),
+    date: new Date(2019, 5, 20),
     etappe: 'Etappe 2',
     title: ''
   },
 
   {
-    date: new Date(2019, 6, 21),
+    date: new Date(2019, 5, 21),
     etappe: 'Etappe 3',
     title: ''
   }
