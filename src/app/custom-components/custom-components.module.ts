@@ -9,6 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { DateCardComponent } from './date-card/date-card.component';
 import {FooterComponent} from './footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { SmallInfoCardComponent } from './small-info-card/small-info-card.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     FontAwesomeModule,
     MatTooltipModule
   ],
-  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent],
-  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent]
+  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent],
+  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent]
 })
 export class CustomComponentsModule { }

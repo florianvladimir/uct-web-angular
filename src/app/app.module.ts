@@ -8,12 +8,14 @@ import localeDECH from '@angular/common/locales/de-CH';
 import {registerLocaleData} from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { InformationPageComponent } from './information-page/information-page.component';
 
 registerLocaleData(localeDECH);
 
 @NgModule({
   declarations: [
     AppComponent,
+    InformationPageComponent,
   ],
   imports: [
     CustomComponentsModule,

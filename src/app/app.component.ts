@@ -13,5 +13,4 @@ export class AppComponent {
   pic3 = './assets/finish.jpg';
   textWelcome = TEXTWELCOME;
   informationTeam = CARDTEAM;
-  informationDate = RACEDATE;
 }

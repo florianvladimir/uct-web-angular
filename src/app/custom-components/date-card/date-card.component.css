@@ -11,6 +11,8 @@
   border: 5px solid black;
   box-sizing: border-box;
   padding: 0 !important;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .hDat{
