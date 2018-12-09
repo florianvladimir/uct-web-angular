@@ -8,7 +8,10 @@
   </mat-card-content>
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
     <ng-container *ngFor="let btn of information.buttonInformation">
-      <a href="{{btn.link}}" target="_blank"><button mat-stroked-button color="primary" class="btn-link-card">{{btn.value}}</button></a>
+      <a *ngIf="btn.type==='newPage'" href="{{btn.link}}" target="_blank"><button mat-stroked-button color="primary" class="btn-link-card">{{btn.value}}</button></a>
+      <button *ngIf="btn.type==='thisPage'" mat-stroked-button color="primary" class="btn-link-card">{{btn.value}}</button>
+      <button *ngIf="btn.type==='scrollTo'" mat-stroked-button color="primary" class="btn-link-card" (click)="scrollTo(btn.link)">{{btn.value}}</button>
+
     </ng-container>
   </mat-card-actions>
 </mat-card>

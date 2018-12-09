@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome">
-        <information-card [information]="data"></information-card>
+        <information-card [information]="data" (scroll)="scrollTo($event)" [btn1]="utc2019" [btn2]="team"></information-card>
       </div>
     </div>
   </div>
@@ -12,7 +12,7 @@
 
 
 <!--UCT2019-->
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3442.JPG" style="height: 80vh"><h1 class="bigTxt">Uphill Champion Thun - 2019</h1></div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3442.JPG" style="height: 50vh"><h1 class="bigTxt"  style="padding: 150px" #utc2019>Uphill Champion Thun - 2019</h1></div>
 <div class="main-content">
   <information-page></information-page>
 </div>
@@ -20,8 +20,8 @@
 
 
 <!--Contacts-->
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/DSC08248.JPG" style="height: 80vh"><h1 class="bigTxt">Team</h1></div>
-<div class="main-content">
+<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/DSC08248_2.JPG" style="height: 50vh"><h1 class="bigTxt" style="padding: 150px" #team>Team</h1></div>
+<div class="main-content" >
   <div class="container">
     <div class="row">
       <ng-container *ngFor="let data of informationTeam">

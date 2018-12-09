@@ -6,8 +6,9 @@ export interface TextInformationCard {
 }
 
 export interface InputButtonInfo {
-  link: string;
+  link: any;
   value: string;
+  type: string;
 }
 
 export interface DataInformationCard {

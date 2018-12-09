@@ -15,12 +15,14 @@ export const TEXTWELCOME: DataInformationCard[] = [
       },
     buttonInformation: [
       {
-        link: '',
-        value: 'UCT 2019'
+        link:  'btn1',
+        value: 'UCT 2019',
+        type: 'scrollTo'
       },
       {
-        link: '',
-        value: 'zum Team'
+        link: 'btn2',
+        value: 'zum Team',
+        type: 'scrollTo'
       }
     ]
   },
@@ -40,11 +42,13 @@ export const TEXTWELCOME: DataInformationCard[] = [
     buttonInformation: [
       {
         link: 'http://www.uphillchampion.ch/',
-        value: 'Mehr'
+        value: 'Mehr',
+        type: 'newPage'
       },
       {
         link: 'https://pictures.uphillchampion.ch/',
-        value: 'Fotos'
+        value: 'Fotos',
+        type: 'newPage'
       }
     ]
   },
@@ -61,7 +65,8 @@ export const TEXTWELCOME: DataInformationCard[] = [
     buttonInformation: [
       {
         link: 'http://www.baergloufcup.ch/',
-        value: 'Mehr'
+        value: 'Mehr',
+        type: 'newPage'
       }
 
     ]

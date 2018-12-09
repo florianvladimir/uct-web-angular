@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
 import {CARDTEAM, RACEDATE, TEXTWELCOME} from './text-welcome';
+import {ViewChild} from '@angular/core/src/metadata/di';
 
 
 @Component({
@@ -13,4 +14,10 @@ export class AppComponent {
   pic3 = './assets/finish.jpg';
   textWelcome = TEXTWELCOME;
   informationTeam = CARDTEAM;
+
+  scrollTo(el: Element) {
+    el.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+  }
+
 }
+

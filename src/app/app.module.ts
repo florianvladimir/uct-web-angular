@@ -9,6 +9,7 @@ import {registerLocaleData} from '@angular/common';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InformationPageComponent } from './information-page/information-page.component';
+import {ParallaxModule} from 'ngx-parallax';
 
 registerLocaleData(localeDECH);
 
@@ -21,7 +22,8 @@ registerLocaleData(localeDECH);
     CustomComponentsModule,
     NgbModule,
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ParallaxModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'de-CH' }],
   bootstrap: [AppComponent]
