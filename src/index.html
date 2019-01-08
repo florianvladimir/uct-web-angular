@@ -2,17 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled1</title>
+  <meta name="description" content="Uphill Champion Thun - Berglauf Cup">
+  <meta name="keywords" content="Berglauf,Thun,Cup,Uphill,Champion,Laufveranstaltung">
+  <title>Uphill Champion</title>
   <base href="/">
-
+  <link rel="shortcut icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../node_modules/jquery-parallax.js/parallax.min.js"></script>
 </head>
 <body>
-  <app-root></app-root>
-</body>
+  <app-root>
 
+    <style>
+      .spinner {
+        width: 40px;
+        height: 40px;
+        margin: 100px auto 10px auto;
+        background-color: #dfdfdf;
+
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-scaleout {
+        0% { -webkit-transform: scale(0) }
+        100% {
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 100% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            opacity: 0;
+          }
+      }
+
+      p{
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      .main{
+        position: absolute;
+        background-color: #052237;
+        height: 100vh;
+        width: 100%;
+      }
+    </style>
+    <div class="main">
+      <div class="spinner">
+      </div>
+      <p>loading</p>
+    </div>
+    <!--<body onload="detectIE()">-->
+
+    <!--</body>-->
+    <!--<script>-->
+      <!--function detectIE(){-->
+
+        <!--if(navigator.appVersion.indexOf("MSIE")!=-1){-->
+
+        <!--}-->
+        <!--else{-->
+          <!--window.open("https://uphillchampion.ch/veraltet", '_blank');-->
+        <!--}-->
+      <!--}-->
+    <!--</script>-->
+  </app-root>
+</body>
 </html>

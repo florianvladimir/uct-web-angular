@@ -7,23 +7,25 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import localeDECH from '@angular/common/locales/de-CH';
 import {registerLocaleData} from '@angular/common';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { InformationPageComponent } from './information-page/information-page.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ParallaxModule} from 'ngx-parallax';
+import {MainPageModule} from "./main-page/main-page.module";
+import {AppRoutingModule} from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 registerLocaleData(localeDECH);
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    InformationPageComponent,
+    PageNotFoundComponent,
   ],
   imports: [
-    CustomComponentsModule,
-    NgbModule,
-    BrowserModule,
-    FontAwesomeModule,
-    ParallaxModule
+    MainPageModule,
+    AppRoutingModule
   ],
   providers: [{ provide: LOCALE_ID, useValue: 'de-CH' }],
   bootstrap: [AppComponent]

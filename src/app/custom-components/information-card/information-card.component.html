@@ -1,4 +1,5 @@
-<mat-card class="info-card">
+<!--<mat-card class="info-card" [@scrollAnimation]="state">-->
+<mat-card class="info-card" [ngClass]="{'info-card-parent-height': heightFitParent}">
   <mat-card-header>
     <mat-card-title class="info-card-header">{{information.textInformation.title}}</mat-card-title>
   </mat-card-header>
