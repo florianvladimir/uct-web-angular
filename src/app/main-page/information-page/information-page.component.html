@@ -1,12 +1,8 @@
 <div class="container">
   <div class="row">
-    <!--<date-card *ngFor="let data of informationDate" [cardInformation]="data" class="col-4"></date-card>-->
-    <div class="col-md-7"><information-card [information]="{textInformation: {text: 'Auch 2019 findet der Uphill Champion Thun statt. In der dritten Juniwoche suchen wir den zweiten Uphill Champion.\n'+
-'    Können die beiden Vorjahressieger Kim Hadorn und Florian Schneider auch auf neuem Terrain überzeugen und den Titel erfolgreich verteidigen?\n'+
-'      Fakt ist: Uphill Champion Thun 2019 wird auf keinen Fall weniger hart als die erste Ausgabe.', title: 'Uphill Champion Thun 2019', pictureUrl: '', pictureAlt: ''}, buttonInformation: []}"
-    [heightFitParent]="true">
-[
-    </information-card></div>
+    <div class="col-md-7">
+      <information-card [information]="info" [heightFitParent]="true" [titleWithBorder]="true"></information-card>
+    </div>
     <div class="col-md-5">
       <small-info-card></small-info-card>
     </div>

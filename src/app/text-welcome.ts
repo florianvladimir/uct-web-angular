@@ -7,7 +7,7 @@ export const TEXTWELCOME: DataInformationCard[] = [
         title: 'Uphill Champion Thun',
         pictureUrl: './assets/stockhorn.jpg',
         pictureAlt: 'Blick Richtung Laufgelände',
-        text: 'Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups:  Der Vesuv. \n Der Weg dorthin ist' +
+        text: 'Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups:\n  Der Vesuv.\n \n Der Weg dorthin ist' +
           '  schwer. Drei harte und steile Strecken warten darauf, bis sich die ersten Läufer des Berglauf-Cups an ihnen die Zähne' +
           '  ausbeissen. Die erste Etappe durch die wunderschöne Cholere-Schlucht ist eine kurze aber intensive Etappe. Bei den' +
           '  zwei anderen Etappen gibt es mehr Höhenmeter und eine «Bergankunft». Oben angekommen wartet auf die Teilnehmer nebst' +
@@ -34,7 +34,7 @@ export const TEXTWELCOME: DataInformationCard[] = [
         pictureAlt: 'Ziel auf dem Vesuv',
         text: 'Im Juni 2018 fand die erste Austragung des Uphill Champion Thun statt. Bei wunderschönem Wetter kämpften an 3 ' +
           'verschiedenen Abende circa 50 Teilnehmer um den sagenumworbenen Gesamtsieg. Ihre Gegner waren nicht nur die anderen ' +
-          'Teilenehmer und das hochkarätige Starterfeld, sondern auch die taffen und teils sehr steilen Strecken. Der Lauf wurde ' +
+          'Teilenehmer und das hochkarätige Starterfeld, sondern auch die taffen und teils sehr steilen Strecken. \n \n Der Lauf wurde ' +
           'seinem Namen allemal gerecht. Kim Hadorn und Florian Schneider waren bei diesen Streckenprofielen kaum zu bremsen. ' +
           'Zurecht wurden sie mit dem Adelstitel "Uphill Champion" geehrt. Bei den Junioren setzten sich Dominic Müller und Lea ' +
           'Troxler souverän durch.'

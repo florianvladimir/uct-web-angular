@@ -1,11 +1,11 @@
 <!--<mat-card class="info-card" [@scrollAnimation]="state">-->
 <mat-card class="info-card" [ngClass]="{'info-card-parent-height': heightFitParent}">
-  <mat-card-header>
+  <mat-card-header [ngClass]="{'info-card-header-line': titleWithBorder}">
     <mat-card-title class="info-card-header">{{information.textInformation.title}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}">
   <mat-card-content>
-    <p>{{information.textInformation.text}}</p>
+    <p [innerHTML]="information.textInformation.text"></p>
   </mat-card-content>
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
     <ng-container *ngFor="let btn of information.buttonInformation">

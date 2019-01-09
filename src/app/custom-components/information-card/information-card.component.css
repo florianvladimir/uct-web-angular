@@ -2,23 +2,28 @@
   margin-top: 1.5em;
   /*min-height: 580px;*/
   white-space: pre-line !important;
+  line-height: 22px;
 }
 .info-card-parent-height{
   height: calc(100% - 3em);
 
 }
 
+.info-card-header-line{
+  margin-bottom: 0px;
+  border-bottom: 2px solid #ff693b;
+}
+.info-card-header-line mat-card-title{
+  margin-bottom: 10px;
+}
+
 .info-card-header {
   font-size: 20px;
-  font-weight: bold;
 }
+
 .mat-card-image{
   max-height: 300px;
   box-shadow: 1px 0px 20px 0px #edecec;
-}
-
-.mat-card-content{
-  font-size: 1em;
 }
 
 .info-card-footer{
@@ -27,4 +32,15 @@
 
 .btn-link-card{
   margin-right: 5px;
+  color: #054060;
+}
+
+@media only screen and (max-width: 770px) {
+  .info-card{
+    line-height: normal;
+  }
+  .info-card-parent-height{
+    height:auto;
+
+  }
 }

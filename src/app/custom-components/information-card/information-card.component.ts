@@ -40,6 +40,8 @@ export class InformationCardComponent implements OnInit{
   @Input()
   public heightFitParent: false;
 
+  @Input()
+  public titleWithBorder: false;
 
   @Output()
   scroll = new EventEmitter<Element>();

@@ -21,6 +21,10 @@
   width: 65%;
 }
 
+.contact-card-text p{
+  font-size: 16px !important;
+}
+
 .contact-card-title{
   margin: 0;
   margin-bottom: 0.5rem;
