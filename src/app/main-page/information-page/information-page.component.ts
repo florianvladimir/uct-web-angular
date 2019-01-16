@@ -22,7 +22,7 @@ export class InformationPageComponent implements OnInit {
     },
     buttonInformation: [
       {
-        link: 'http://2018.uphillchampion.ch/',
+        link: 'https://2018.uphillchampion.ch/',
         value: 'Uphill Champion 2018',
         type: 'newPage'
       },

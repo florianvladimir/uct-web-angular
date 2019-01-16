@@ -5,7 +5,7 @@ import {MainPageComponent} from "./main-page/main-page.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 
 const appRoutes: Routes = [
-  { path: 'home', component: MainPageComponent },
+  { path: 'home', component: MainPageComponent},
 
   { path: '',
     redirectTo: '/home',

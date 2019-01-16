@@ -33,15 +33,15 @@ export const TEXTWELCOME: DataInformationCard[] = [
         pictureUrl: './assets/cholere.jpg',
         pictureAlt: 'Ziel auf dem Vesuv',
         text: 'Im Juni 2018 fand die erste Austragung des Uphill Champion Thun statt. Bei wunderschönem Wetter kämpften an 3 ' +
-          'verschiedenen Abende circa 50 Teilnehmer um den sagenumworbenen Gesamtsieg. Ihre Gegner waren nicht nur die anderen ' +
-          'Teilenehmer und das hochkarätige Starterfeld, sondern auch die taffen und teils sehr steilen Strecken. \n \n Der Lauf wurde ' +
-          'seinem Namen allemal gerecht. Kim Hadorn und Florian Schneider waren bei diesen Streckenprofielen kaum zu bremsen. ' +
+          'verschiedenen Abenden circa 50 Teilnehmer um den sagenumworbenen Gesamtsieg. Ihre Gegner waren nicht ' +
+          'nur das hochkarätige Starterfeld, sondern auch die taffen und teils sehr steilen Strecken. \n \n Der Lauf wurde ' +
+          'seinem Namen allemal gerecht. Kim Hadorn und Florian Schneider waren bei diesen Streckenprofilen kaum zu bremsen. \n ' +
           'Zurecht wurden sie mit dem Adelstitel "Uphill Champion" geehrt. Bei den Junioren setzten sich Dominic Müller und Lea ' +
           'Troxler souverän durch.'
       },
     buttonInformation: [
       {
-        link: 'http://www.uphillchampion.ch/',
+        link: 'https://2018.uphillchampion.ch',
         value: 'Mehr',
         type: 'newPage'
       },
