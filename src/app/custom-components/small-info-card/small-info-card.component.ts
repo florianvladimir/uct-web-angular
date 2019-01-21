@@ -4,7 +4,7 @@ import { faCalendar, faMapMarkerAlt, faTrophy, faMountain, faClock, faRoute } fr
 @Component({
   selector: 'small-info-card',
   templateUrl: './small-info-card.component.html',
-  styleUrls: ['./small-info-card.component.css']
+  styleUrls: ['./small-info-card.component.scss']
 })
 export class SmallInfoCardComponent {
 

@@ -5,7 +5,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 @Component({
   selector: 'information-card',
   templateUrl: './information-card.component.html',
-  styleUrls: ['./information-card.component.css'],
+  styleUrls: ['./information-card.component.scss'],
   // animations: [
   //   trigger('scrollAnimation', [
   //     state('show', style({

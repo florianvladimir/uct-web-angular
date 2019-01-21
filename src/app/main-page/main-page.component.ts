@@ -6,7 +6,7 @@ import {ReloadHomeService} from "./reload-home.service";
 @Component({
   selector: 'app-home',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
   pic1 = './assets/DSC08248.jpg';
