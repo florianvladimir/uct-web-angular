@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { ReloadHomeService } from './reload-home.service';
+import {ReloadHomeService} from './reload-home.service';
 
 describe('ReloadHomeService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

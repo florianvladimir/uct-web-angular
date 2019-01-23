@@ -1,0 +1,31 @@
+<mat-expansion-panel (opened)="panelOpenState = true"
+                     (closed)="panelOpenState = false"
+                     [(expanded)]="expanded">
+  <mat-expansion-panel-header>
+    <mat-panel-title class="main-title">
+      <span class="title bold">{{stageInfo.stage}} - {{stageInfo.stageName}}</span>
+    </mat-panel-title>
+    <mat-panel-description *ngIf="!panelOpenState">
+      <span class="title description">{{stageInfo.distance}} km/{{stageInfo.altitude}} hm.</span>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <!--<iframe src='https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FQlpUvDZ1QM602IlIL6eUOA&layers_visibility=false,false,false,false,false,true&layers_timestamp=18641231,,,,,&catalogNodes=457,458,491,510&E=2617192.73&N=1177136.71&zoom=7' width='1110' height='350' frameborder='0' style='border:0'></iframe>-->
+  <p>I'm visible because I am open</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</mat-expansion-panel>

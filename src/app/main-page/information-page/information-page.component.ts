@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {RACEDATE} from '../../text-welcome';
-import {DataInformationCard} from "../../custom-components/information-card/model/data-information-card.interface";
+import {INFOCUP} from '../../text-welcome';
+import {RaceDetail} from "../models/race-detail.interface";
 
 @Component({
   selector: 'information-page',
@@ -10,24 +10,29 @@ import {DataInformationCard} from "../../custom-components/information-card/mode
 export class InformationPageComponent implements OnInit {
 
 
-  info: DataInformationCard = {
-    textInformation:
-      {
-      text: 'Auch 2019 findet der Uphill Champion Thun statt.\n In der ersten Juniwoche vom <strong>4. Juni - 6. Juni</strong> suchen wir den zweiten Uphill Champion.<br>\r\n' +
-        '    Können die beiden Vorjahressieger Kim Hadorn und Florian Schneider auch auf neuem Terrain überzeugen und den Titel erfolgreich verteidigen?\n <br>' +
-        '      Fakt ist: Uphill Champion Thun 2019 wird auf keinen Fall weniger hart als die erste Ausgabe. \n \n Mehr Informationen folgen...',
-      title: 'Uphill Champion Thun 2019',
-      pictureUrl: '',
-      pictureAlt: ''
+  info = INFOCUP;
+
+  temp: RaceDetail[] = [
+    {
+      stage: 'Etappe 1',
+      stageName: 'Rabeflue',
+      distance: 2.7,
+      altitude: 280
     },
-    buttonInformation: [
-      {
-        link: 'https://2018.uphillchampion.ch/',
-        value: 'Uphill Champion 2018',
-        type: 'newPage'
-      },
-    ]
-  };
+    {
+      stage: 'Etappe 2',
+      stageName: 'Haltenegg',
+      distance: 4,
+      altitude: 480
+    },
+    {
+      stage: 'Etappe 3',
+      stageName: 'Vesuv',
+      distance: 5.1,
+      altitude: 560
+    },
+
+  ];
 
   constructor() {
   }

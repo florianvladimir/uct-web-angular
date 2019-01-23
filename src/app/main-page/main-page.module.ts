@@ -7,6 +7,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {ParallaxModule} from "ngx-parallax";
 import {InformationPageComponent} from "./information-page/information-page.component";
 import {MainPageComponent} from "./main-page.component";
+import {MatExpansionModule} from "@angular/material";
+import {RaceDetailComponent} from './information-page/race-detail/race-detail.component';
 
 @NgModule({
   imports: [
@@ -15,8 +17,9 @@ import {MainPageComponent} from "./main-page.component";
     NgbModule,BrowserModule,
     FontAwesomeModule,
     ParallaxModule,
+    MatExpansionModule
   ],
-  declarations: [MainPageComponent, InformationPageComponent],
+  declarations: [MainPageComponent, InformationPageComponent, RaceDetailComponent],
   exports: [MainPageComponent]
 })
 export class MainPageModule { }

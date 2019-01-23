@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {ReloadHomeService} from "../main-page/reload-home.service";
+import {Component, OnInit} from '@angular/core';
+import {ReloadHomeService} from "../main-page/services/reload-home.service";
 
 @Component({
   selector: 'app-page-not-found',

@@ -7,7 +7,7 @@ import {MainPageModule} from "./main-page/main-page.module";
 import {AppRoutingModule} from './app-routing.module';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {MatButtonModule} from "@angular/material";
-import {ReloadHomeService} from "./main-page/reload-home.service";
+import {ReloadHomeService} from "./main-page/services/reload-home.service";
 
 registerLocaleData(localeDECH);
 

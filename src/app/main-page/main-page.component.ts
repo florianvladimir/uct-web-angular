@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CARDTEAM, TEXTWELCOME} from "../text-welcome";
-import {Router} from "@angular/router";
-import {ReloadHomeService} from "./reload-home.service";
+import {ReloadHomeService} from "./services/reload-home.service";
 
 @Component({
   selector: 'app-home',

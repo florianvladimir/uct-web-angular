@@ -7,4 +7,10 @@
       <small-info-card></small-info-card>
     </div>
   </div>
+
+  <mat-accordion>
+      <race-detail *ngFor="let info of temp" [stageInfo]="info"></race-detail>
+  </mat-accordion>
+
+
 </div>
