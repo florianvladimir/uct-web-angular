@@ -10,6 +10,18 @@
   width: 240px;
 }
 
+.info{
+  background-color: white;
+  color: #ff693b;
+  margin: 1em;
+  text-align: center;
+}
+
+.cont{
+  width: 100%;
+  background-color: #054060;
+}
+
 @media only screen and (max-width: 600px) {
   .description{
     display: none;

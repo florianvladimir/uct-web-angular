@@ -3,4 +3,8 @@ export interface RaceDetail {
   stageName: string;
   distance: number
   altitude: number;
+  date: number;
+  timeToBeat: string;
+  map: string;
+  description: string;
 }

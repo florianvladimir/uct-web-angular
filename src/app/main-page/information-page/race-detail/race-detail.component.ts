@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {RaceDetail} from "../../models/race-detail.interface";
+import {DomSanitizer, SafeUrl} from "@angular/platform-browser";
 
 @Component({
   selector: 'race-detail',
@@ -15,12 +16,17 @@ export class RaceDetailComponent implements OnInit {
 
   expanded = false;
 
-  constructor() {
+  public trustedMap: SafeUrl;
+
+  constructor(private sanatizer: DomSanitizer) {
   }
 
   ngOnInit() {
     if (this.stageInfo.stage === 'Etappe 1') {
       this.expanded = true;
+    }
+    if(this.stageInfo.map!==''){
+      this.trustedMap = this.sanatizer.bypassSecurityTrustResourceUrl(this.stageInfo.map);
     }
   }
 
