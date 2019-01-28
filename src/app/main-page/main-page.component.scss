@@ -27,6 +27,10 @@
   font-size: 80px;
 }
 
+.utc2019{
+  min-height: 1500px;
+}
+
 @media only screen and (max-width: 770px) {
   .parallax-window h1{
     padding-top: 20vh;
@@ -34,5 +38,8 @@
   .bigTxt{
     font-size: 40px;
     padding: 150px 3px !important;
+  }
+  .utc2019{
+    height: auto;
   }
 }

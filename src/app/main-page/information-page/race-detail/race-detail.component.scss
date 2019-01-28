@@ -11,19 +11,32 @@
 }
 
 .info{
-  background-color: white;
-  color: #ff693b;
+  color: #ffffff;
+  background-color: #ff693b;
   margin: 1em;
   text-align: center;
+  box-shadow: 1px 0px 20px 0px #edecec;
+}
+
+.sm{
+  display: none;
 }
 
 .cont{
   width: 100%;
-  background-color: #054060;
 }
 
 @media only screen and (max-width: 600px) {
   .description{
     display: none;
+  }
+  .sm{
+    display: block;
+  }
+  .big{
+    display: none;
+  }
+  .cust-row{
+    padding: 0 10%;
   }
 }
