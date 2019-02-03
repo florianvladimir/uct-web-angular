@@ -41,8 +41,28 @@ p{
   background: #343434;
 }
 
+.parallax-window h1{
+  text-align: center;
+  padding-top: 400px;
+  margin-top: 0;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7)
+}
+
+.bigTxt{
+  font-size: 80px;
+}
 @media only screen and (max-width: 600px) {
   .mat-expansion-panel-body{
     padding: 0 !important;
   }
 }
+@media only screen and (max-width: 770px) {
+  .parallax-window h1{
+    padding-top: 20vh;
+  }
+  .bigTxt{
+    font-size: 40px;
+    padding: 150px 3px !important;
+  }
+}
+

@@ -13,9 +13,15 @@
 .info{
   color: #ffffff;
   background-color: #ff693b;
-  margin: 1em;
   text-align: center;
-  box-shadow: 1px 0px 20px 0px #edecec;
+  padding: 0.2em 0;
+  margin: 0.5em;
+  h2{
+    margin: 0.5em;
+  }
+  p{
+    margin: 0.5em;
+  }
 }
 
 .sm{
@@ -36,7 +42,7 @@
   .big{
     display: none;
   }
-  .cust-row{
-    padding: 0 10%;
-  }
+  //.cust-row{
+  //  padding: 0 10%;
+  //}
 }

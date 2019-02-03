@@ -9,20 +9,23 @@
       <span class="title description">{{stageInfo.distance}} km/{{stageInfo.altitude}} hm.</span>
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <iframe *ngIf="trustedMap" [src]='trustedMap' width='100%' height='350' frameborder='0' style='border:0'></iframe>
+  <!--<iframe *ngIf="trustedMap" [src]='trustedMap' width='100%' height='350' frameborder='0' style='border:0'></iframe>-->
   <div class="cont">
     <div style="width: 100%; margin: 0 auto">
-      <div class="row cust-row">
-        <div class="col info big"><p>Distanz</p><h2>{{stageInfo.distance}} KM</h2></div>
-        <div class="col info big"><p>Höhenmeter</p><h2>{{stageInfo.altitude}}</h2></div>
-        <div class="col info big"><p>Time to Beat</p><h2>{{stageInfo.timeToBeat}}</h2></div>
-        <div class="col info big"><p>Datum</p><h2>{{stageInfo.date | date: 'dd. MMMM'}}</h2></div>
-        <div class="col-4 info sm"><p>Distanz</p><h2>{{stageInfo.distance}} KM</h2></div>
-        <div class="col-4 info sm"><p>Höhenmeter</p><h2>{{stageInfo.altitude}}</h2></div>
-        <div class="col-4 info sm"><p>Time to Beat</p><h2>{{stageInfo.timeToBeat}}</h2></div>
-        <div class="col-4 info sm"><p>Datum</p><h2>{{stageInfo.date | date: 'dd. MMMM'}}</h2></div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="stage-description" [innerHTML]="stageInfo.description"></div>
+          <button mat-stroked-button color="warn" class="btn-link-card">Mehr erfahren</button>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-3 col-sm-11">
+          <div class="info"><p>Distanz</p><h2>{{stageInfo.distance}} KM</h2></div>
+          <div class="info"><p>Höhenmeter</p><h2>{{stageInfo.altitude}}</h2></div>
+          <div class="info"><p>Time to Beat</p><h2>{{stageInfo.timeToBeat}}</h2></div>
+          <div class="info"><p>Datum</p><h2>{{stageInfo.date | date: 'dd. MMMM'}}</h2></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="stage-description" [innerHTML]="stageInfo.description"></div>
 </mat-expansion-panel>

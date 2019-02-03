@@ -10,6 +10,7 @@ import { DateCardComponent } from './date-card/date-card.component';
 import {FooterComponent} from './footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SmallInfoCardComponent } from './small-info-card/small-info-card.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { SmallInfoCardComponent } from './small-info-card/small-info-card.compon
     FontAwesomeModule,
     MatTooltipModule
   ],
-  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent],
-  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent]
+  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent],
+  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent]
 })
 export class CustomComponentsModule { }

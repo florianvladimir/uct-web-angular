@@ -1,3 +1,46 @@
+<mat-toolbar color="#ffcc00" class="navbar">
+  <mat-toolbar-row>
+    <a href="/home">
+      <button mat-button class="nav-btn">Home</button>
+    </a>
+    <ng-container *ngIf="home.includes('home')">
+      <button mat-button class="nav-btn" (click)="scrollTo('utc2019')">UCT 2019</button>
+      <button mat-button class="nav-btn" (click)="scrollTo('team')">Team</button>
+    </ng-container>
+    <ng-container *ngIf="!home.includes('home')">
+      <a href="/home?part=utc2019">
+        <button mat-button class="nav-btn">UCT 2019</button>
+      </a>
+      <a href="/home?part=team">
+        <button mat-button class="nav-btn">Team</button>
+      </a>
+    </ng-container>
+    <button mat-button class="nav-btn" [matMenuTriggerFor]="menu">Etappen</button>
+    <mat-menu #menu="matMenu">
+      <ng-container *ngIf="!home.includes('stages')">
+        <a href="/stages">
+          <button mat-menu-item>Alle</button>
+        </a>
+        <a href="/stages?race=1">
+          <button mat-menu-item>Etappe 1</button>
+        </a>
+        <a href="/stages?race=2">
+          <button mat-menu-item>Etappe 2</button>
+        </a>
+        <a href="/stages?race=3">
+          <button mat-menu-item>Etappe 3</button>
+        </a>
+      </ng-container>
+      <ng-container *ngIf="home.includes('stages')">
+        <button mat-menu-item>Alle</button>
+        <button mat-menu-item (click)="scrollTo('race1')">Etappe 1</button>
+        <button mat-menu-item (click)="scrollTo('race2')">Etappe 2</button>
+        <button mat-menu-item (click)="scrollTo('race3')">Etappe 3</button>
+      </ng-container>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
 <router-outlet></router-outlet>
 
 

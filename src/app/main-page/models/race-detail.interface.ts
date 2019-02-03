@@ -7,4 +7,5 @@ export interface RaceDetail {
   timeToBeat: string;
   map: string;
   description: string;
+  images: string[];
 }
