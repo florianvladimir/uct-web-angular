@@ -3,14 +3,15 @@
   <mat-card-header [ngClass]="{'info-card-header-line': titleWithBorder}">
     <mat-card-title class="info-card-header">{{information.textInformation.title}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}">
+  <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}"
+       style="object-fit: cover" [ngClass]="{'contain': information.textInformation.title.includes('Bärner Bärgloufcup')}">
   <mat-card-content>
     <p [innerHTML]="information.textInformation.text"></p>
   </mat-card-content>
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
     <ng-container *ngFor="let btn of information.buttonInformation">
       <a *ngIf="btn.type==='newPage'" href="{{btn.link}}" target="_blank"><button mat-stroked-button color="warn" class="btn-link-card">{{btn.value}}</button></a>
-      <button *ngIf="btn.type==='thisPage'" mat-stroked-button color="warn" class="btn-link-card">{{btn.value}}</button>
+      <a *ngIf="btn.type==='thisPage'" href="{{btn.link}}"><button  mat-stroked-button color="warn" class="btn-link-card">{{btn.value}}</button></a>
       <button *ngIf="btn.type==='scrollTo'" mat-stroked-button color="warn" class="btn-link-card" (click)="scrollTo(btn.link)">{{btn.value}}</button>
 
     </ng-container>

@@ -19,7 +19,7 @@
 
 
 
-.utc2019{
+.uct2019{
   min-height: 1120px;
 }
 
@@ -31,7 +31,14 @@
     font-size: 40px;
     padding: 150px 3px !important;
   }
-  .utc2019{
+  .uct2019{
     height: 2080px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .uct2019{
+    height: 2750px;
+  }
+}
+

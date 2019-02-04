@@ -10,6 +10,7 @@ import {MatButtonModule, MatMenuModule, MatToolbarModule} from "@angular/materia
 import {ReloadHomeService} from "./main-page/services/reload-home.service";
 import {StagePageModule} from "./stage-page/stage-page.module";
 import {IdScrollService} from "./custom-components/id-scroll.service";
+import {CustomComponentsModule} from "./custom-components/custom-components.module";
 
 registerLocaleData(localeDECH);
 
@@ -23,6 +24,7 @@ registerLocaleData(localeDECH);
   ],
   imports: [
     CommonModule,
+    CustomComponentsModule,
     MainPageModule,
     StagePageModule,
     AppRoutingModule,

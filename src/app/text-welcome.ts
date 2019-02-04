@@ -33,7 +33,7 @@ export const TEXTWELCOME: DataInformationCard[] = [
     textInformation:
       {
         title: 'Uphill Champion Thun 2018',
-        pictureUrl: './assets/cholere.jpg',
+        pictureUrl: './assets/IMG_3341.JPG',
         pictureAlt: 'Ziel auf dem Vesuv',
         text: 'Im Juni 2018 fand die erste Austragung des Uphill Champion Thun statt. Bei wunderschönem Wetter kämpften an 3 ' +
           'verschiedenen Abenden circa 50 Teilnehmer um den sagenumworbenen Gesamtsieg. Ihre Gegner waren nicht ' +
@@ -151,18 +151,22 @@ export const RACEDATE: DateCardInformation[] = [
 export const INFOCUP: DataInformationCard = {
   textInformation:
     {
-      text: 'Auch 2019 findet der Uphill Champion Thun statt.\n In der ersten Juniwoche vom <strong>4. Juni - 6. Juni</strong> suchen wir den zweiten Uphill Champion.<br>\r\n' +
-        '    Können die beiden Vorjahressieger Kim Hadorn und Florian Schneider auch auf neuem Terrain überzeugen und den Titel erfolgreich verteidigen?\n <br>' +
-        '      Fakt ist: Uphill Champion Thun 2019 wird auf keinen Fall weniger hart als die erste Ausgabe. \n \n Mehr Informationen folgen...',
+      text: 'Auch 2019 findet der Uphill Champion Thun statt. In der ersten Juniwoche vom <strong>4. Juni - 6. Juni</strong> suchen wir den zweiten Uphill Champion. <br> \r\n' +
+        'Der Uphill Champion Thun 2019 auf keinen Fall weniger hart als die erste Ausgabe. ' +
+        'Mit Einzelstart, Massenstart und Verfolgung bieten dieses Jahr auch wieder ein abwechslungsreiches Programm. \n ' +
+        'Auf die Läufer warten unteranderem zwei neue, wunderschöne aber harte Strecken: \n ' +
+        'Neu fällt der Startschuss für den Berglauf-Cup in Steffisburg. Von dort führt die Strecke auf die Rabeflue. \n' +
+        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Läufer müssen sich nicht mehr von der quasi überhängenden Streckenverlauf fürchten.'
+      ,
       title: 'Uphill Champion Thun 2019',
       pictureUrl: '',
       pictureAlt: ''
     },
   buttonInformation: [
     {
-      link: 'https://2018.uphillchampion.ch/',
-      value: 'Uphill Champion 2018',
-      type: 'newPage'
+      link: '/stages',
+      value: 'Mehr erfahren',
+      type: 'thisPage'
     },
   ]
 };
@@ -187,7 +191,15 @@ export const STAGES:  RaceDetail[] = [
       'Die idyllische Zielkulisse auf der Rabeflue bietet für alle wie immer den verdienten Lohn für den steilen Aufstieg und den absolvierten 280 Höhemetern.\n' +
       '\n' +
       'Runter geht’s dann gemütlicher ohne Zeitdruck zurück zum WKZ. Dort wartet bereits ein kleines Buffet mit Kuchen und Früchten,' +
-      ' um möglichst schnell die Energiereserven wieder aufzufüllen für die nächsten zwei Etappen.</p>'
+      ' um möglichst schnell die Energiereserven wieder aufzufüllen für die nächsten zwei Etappen.</p>',
+    images: [
+      './assets/rabeflue/IMG_20190119_152233.jpg',
+      './assets/rabeflue/IMG-20180321-WA0014.jpg',
+      './assets/rabeflue/IMG_20190119_145831.jpg',
+      './assets/rabeflue/IMG_20190119_150706.jpg',
+      './assets/rabeflue/IMG-20180321-WA0009.jpg',
+
+    ]
   },
   {
     stage: 'Etappe 2',
@@ -206,7 +218,12 @@ export const STAGES:  RaceDetail[] = [
       ' Nach einer ("Achtung: Es geht sogar runter!") traverse kommt ein harter Schlussaufstieg auf die Haltenegg. ' +
       'Dort wartet wie immer ein einzigartiges Panorama auf die Läufer, welche sich wagemutig den Berg hinauf spurteten. ' +
       'Insgesamt wurden hier 480 Höhenmeter überwunden und wahrscheinlich kann man von hier oben jedem einzelnen Meter einen Gipfel im Panorama zuordnen.' +
-      ' Um die Regeneration anzukurbeln wird empfohlen, genussvoll den Abstieg zu Fuss anzutreten. Wem aber die Beine versagen wird auch ein Shuttle angeboten.</p>'
+      ' Um die Regeneration anzukurbeln wird empfohlen, genussvoll den Abstieg zu Fuss anzutreten. Wem aber die Beine versagen wird auch ein Shuttle angeboten.</p>',
+    images: [
+      './assets/haltenegg/IMG_3255.JPG',
+      './assets/haltenegg/IMG_3299.JPG',
+      './assets/haltenegg/IMG_3274.JPG',
+    ]
   },
   {
     stage: 'Etappe 3',
@@ -226,7 +243,9 @@ export const STAGES:  RaceDetail[] = [
       ' Durch den Jagdstart der Besten der Cupwertung ist für ein spannendes Finale gesorgt! Wer wird Uphill Champion 2019?' +
       ' Mit dem guten Gefühl den Aufstieg geschafft zu haben, fällt der Abstieg deutlich leichter und auch die Beine fühlen sich bestimmt besser an.</p>',
     images: [
-      './assets/IMG_3442.JPG'
+      './assets/vesuv/IMG-20180322-WA0001.jpg',
+      './assets/vesuv/IMG_3449.JPG',
+      './assets/vesuv/IMG-20180324-WA0002.jpg',
     ]
   },
 

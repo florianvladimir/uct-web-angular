@@ -1,0 +1,46 @@
+<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3263.JPG"
+     style="height: 80vh; position:relative;">
+  <h1 class="bigTxt" style="padding: 350px 0 !important;">Etappen</h1>
+</div>
+<div class="container">
+  <div class="row" *ngFor="let data of info; index as i">
+    <div class="hr" *ngIf="i!==0"></div>
+    <div class="col-12 map">
+      <h1 class="dark" id="{{data.stageName}}">{{data.stageName}}</h1>
+      <app-map [url]="data.map"></app-map>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="small-info">
+        <p>Distanz</p>
+        <h2>{{data.distance}} KM</h2>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="small-info">
+        <p>Höhenmeter</p>
+        <h2>{{data.altitude}}</h2>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="small-info">
+        <p>Time to Beat</p>
+        <h2>{{data.timeToBeat}}</h2>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="small-info">
+        <p>Datum</p>
+        <h2>{{data.date | date: 'dd. MMMM'}}</h2>
+      </div>
+    </div>
+    <div class="col-12 cont">
+      <div [innerHTML]="data.description"></div>
+    </div>
+    <slideshow [showArrows]="true"
+               [imageUrls]="data.images"
+               [lazyLoad]="data.images?.length > 1"
+               class="col-12 slideShow">
+
+    </slideshow>
+  </div>
+</div>

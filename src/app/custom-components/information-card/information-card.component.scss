@@ -35,6 +35,10 @@
   color: #ff693b;
 }
 
+.contain{
+  object-fit: contain !important;
+}
+
 @media only screen and (max-width: 770px) {
   .info-card{
     line-height: normal;
