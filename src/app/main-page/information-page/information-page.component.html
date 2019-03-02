@@ -7,10 +7,73 @@
       <small-info-card></small-info-card>
     </div>
   </div>
+  <div class="row">
+    <div class="col-lg-7">
+      <information-card [information]="price" [titleWithBorder]="true" [heightFitParent]="true">
+        <div class="entry-box">
+          <div class="row">
+            <div class="col-4">
 
-  <mat-accordion>
+            </div>
+            <div class="col-4">
+              <div class="price title-bubble">
+                <p class="bubble-cont">Etappe</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="price title-bubble">
+                <p class="bubble-cont">Cup</p>
+              </div>
+            </div>
+          </div>
+          <div class="row entry-row">
+            <div class="col-4">
+              <div class="bubble bubble-no">
+                <p class="bubble-cont">Erwachsen</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bubble price">
+                <p class="bubble-cont">8.-</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bubble price">
+                <p class="bubble-cont">18.-</p>
+              </div>
+            </div>
+          </div>
+          <div class="row entry-row">
+            <div class="col-4">
+              <div class="bubble bubble-no">
+                <p class="bubble-cont">Junioren</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bubble price">
+                <p class="bubble-cont">6.-</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="bubble price">
+                <p class="bubble-cont">12.-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </information-card>
+    </div>
+    <div class="col-lg-5">
+      <information-card [information]="entry" [titleWithBorder]="true" [heightFitParent]="true">
+      </information-card>
+    </div>
+  </div>
+
+  <div class="accordion-stage">
+    <mat-accordion>
       <race-detail *ngFor="let info of temp" [stageInfo]="info"></race-detail>
-  </mat-accordion>
+    </mat-accordion>
+  </div>
 
 
 </div>

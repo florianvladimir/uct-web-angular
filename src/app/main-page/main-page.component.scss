@@ -20,10 +20,12 @@
 
 
 .uct2019{
-  min-height: 1120px;
+  min-height: 1700px;
+
 }
 
-@media only screen and (max-width: 770px) {
+
+@media only screen and (max-width: 992px) {
   .parallax-window h1{
     padding-top: 20vh;
   }
@@ -32,13 +34,9 @@
     padding: 150px 3px !important;
   }
   .uct2019{
-    height: 2080px;
+    min-height: unset;
   }
+
 }
 
-@media only screen and (max-width: 600px) {
-  .uct2019{
-    height: 2750px;
-  }
-}
 

@@ -4,9 +4,11 @@
     <mat-card-title class="info-card-header">{{information.textInformation.title}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}"
-       style="object-fit: cover" [ngClass]="{'contain': information.textInformation.title.includes('Bärner Bärgloufcup')}">
+       style="object-fit: cover" [ngClass]="{'contain': information.textInformation.title.includes('Bärner Bärgloufcup')}"
+        *ngIf="information.textInformation.pictureUrl !== ''">
   <mat-card-content>
-    <p [innerHTML]="information.textInformation.text"></p>
+    <p [innerHTML]="information.textInformation.text" [ngClass]="{'text-margin': titleWithBorder}"></p>
+    <ng-content></ng-content>
   </mat-card-content>
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
     <ng-container *ngFor="let btn of information.buttonInformation">

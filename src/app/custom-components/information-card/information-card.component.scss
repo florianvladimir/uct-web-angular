@@ -35,11 +35,15 @@
   color: #ff693b;
 }
 
+.text-margin{
+  margin-top: 10px !important;
+}
+
 .contain{
   object-fit: contain !important;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 992px) {
   .info-card{
     line-height: normal;
   }

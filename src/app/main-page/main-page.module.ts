@@ -7,7 +7,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {ParallaxModule} from "ngx-parallax";
 import {InformationPageComponent} from "./information-page/information-page.component";
 import {MainPageComponent} from "./main-page.component";
-import {MatButtonModule, MatExpansionModule} from "@angular/material";
+import {MatButtonModule, MatCardModule, MatExpansionModule} from "@angular/material";
 import {RaceDetailComponent} from './information-page/race-detail/race-detail.component';
 
 @NgModule({
@@ -18,7 +18,8 @@ import {RaceDetailComponent} from './information-page/race-detail/race-detail.co
     FontAwesomeModule,
     ParallaxModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
   ],
   declarations: [MainPageComponent, InformationPageComponent, RaceDetailComponent],
   exports: [MainPageComponent]

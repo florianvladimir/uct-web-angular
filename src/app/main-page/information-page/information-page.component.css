@@ -1,0 +1,71 @@
+.entry-box .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.entry-row{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: #054060;
+  margin-top: 10px;
+  padding: 10px 0;
+  margin-bottom: 2em !important;
+}
+
+.bubble{
+  background-color: white;
+  color: #054060;
+  border-radius: 50%;
+  border: white solid 2px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  transition: 1s;
+  cursor: context-menu;
+}
+
+.bubble:hover{
+  background-color: #054060;
+  color: white;
+  border: white solid 2px;
+}
+
+.bubble-cont{
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.bubble-no{
+  background-color: #054060;
+  color: white;
+  border: none;
+}
+
+.price{
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.price-col{
+  background-color: rgba(255, 255, 255, 0.83);
+}
+
+.title-bubble{
+  border: none;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  width: 80px;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .accordion-stage{
+    display: none;
+  }
+  .bubble{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}

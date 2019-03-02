@@ -1,4 +1,4 @@
-import {ContactCardInformation} from './custom-components/contact-card/model/contact-card-text.interface';
+﻿import {ContactCardInformation} from './custom-components/contact-card/model/contact-card-text.interface';
 import {DataInformationCard} from './custom-components/information-card/model/data-information-card.interface';
 import {DateCardInformation} from './custom-components/date-card/model/date-card-information.interface';
 import {RaceDetail} from "./main-page/models/race-detail.interface";
@@ -11,8 +11,8 @@ export const TEXTWELCOME: DataInformationCard[] = [
         pictureUrl: './assets/stockhorn.jpg',
         pictureAlt: 'Blick Richtung Laufgelände',
         text: 'Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups:\n  Der Vesuv.\n \n Der Weg dorthin ist' +
-          '  schwer. Drei harte und steile Strecken warten darauf, bis sich die ersten Läufer des Berglauf-Cups an ihnen die Zähne' +
-          '  ausbeissen. Die erste Etappe durch die wunderschöne Cholere-Schlucht ist eine kurze aber intensive Etappe. Bei den' +
+          '  schwer. Drei harte und steile Strecken warten darauf, bis sich die Läuferinnen und Läufer des Berglauf-Cups an ihnen die Zähne' +
+          '  ausbeissen. Die erste Etappe auf die Rabeflue ist eine eher kurze aber trotzdem intensive Etappe. Bei den' +
           '  zwei anderen Etappen gibt es mehr Höhenmeter und eine «Bergankunft». Oben angekommen wartet auf die Teilnehmer nebst' +
           '  sauren Beinen und einem rasenden Herz eine schöne Aussicht auf die mächtige Bergwelt, die Stadt und den See.'
       },
@@ -152,11 +152,11 @@ export const INFOCUP: DataInformationCard = {
   textInformation:
     {
       text: 'Auch 2019 findet der Uphill Champion Thun statt. In der ersten Juniwoche vom <strong>4. Juni - 6. Juni</strong> suchen wir den zweiten Uphill Champion. <br> \r\n' +
-        'Der Uphill Champion Thun 2019 auf keinen Fall weniger hart als die erste Ausgabe. ' +
-        'Mit Einzelstart, Massenstart und Verfolgung bieten dieses Jahr auch wieder ein abwechslungsreiches Programm. \n ' +
-        'Auf die Läufer warten unteranderem zwei neue, wunderschöne aber harte Strecken: \n ' +
+        'Der Uphill Champion Thun 2019 ist auf keinen Fall weniger hart als die erste Ausgabe. ' +
+        'Mit Einzelstart, Massenstart und Verfolgung bieten wir dieses Jahr auch wieder ein abwechslungsreiches Programm. \n ' +
+        'Auf die Läufer und Läuferinnen warten unteranderem zwei neue, wunderschöne aber harte Strecken: \n ' +
         'Neu fällt der Startschuss für den Berglauf-Cup in Steffisburg. Von dort führt die Strecke auf die Rabeflue. \n' +
-        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Läufer müssen sich nicht mehr von der quasi überhängenden Streckenverlauf fürchten.'
+        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Teilnehmenden müssen sich nicht mehr vom quasi überhängenden Streckenverlauf fürchten.'
       ,
       title: 'Uphill Champion Thun 2019',
       pictureUrl: '',
@@ -177,21 +177,21 @@ export const STAGES:  RaceDetail[] = [
     stageName: 'Rabeflue',
     distance: 2.7,
     altitude: 280,
-    date: new Date(2019, 6, 4).getTime(),
+    date: new Date(2019, 5, 4).getTime(),
     timeToBeat: '???',
     map: 'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FggUK-4rVSa2o0j_aP4mVDQ&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&E=2615190.74&N=1179493.86&zoom=7',
     description: '<h2>Top of Thun</h2>' +
-      '<p class="text">Auf die Plätze, fertig, los! Die diesjährige Ausgabe des Uphill Champions wird wieder à la Prolog mit Einzelstart ' +
+      '<p class="text">Auf die Plätze, fertig, los! Die diesjährige Ausgabe des Uphill Champions wird wieder à la Prolog mit Einzelstart stattfinden.' +
       ' Der erste Abschnitt im Wald ist mit einer leichten Steigung ein angenehmer Einstieg.' +
-      ' Doch dieser erste Kilometer bedeutet nur die Ruhe vor dem Sturm. Denn dann kommt die Wand!' +
+      ' Doch dieser erste Kilometer bedeutet nur die Ruhe vor dem Sturm, denn dann kommt die Wand!' +
       ' Vergleichbar mit dem Mörderbacken im Langlauf wird in diesem berühmten Aufstieg wohl die Entscheidung dieses Prologs fallen.' +
-      ' Doch es sollte nicht die gesamte Energie in diesen Aufstieg gesteckt werden, denn oben angekommen führt der letzte Abschnitt fast flach bis zum Aussichtspunkt der Rabeflue' +
+      ' Doch es sollte nicht die gesamte Energie in diesen Aufstieg gesteckt werden, denn oben angekommen, führt der letzte Abschnitt fast flach bis zum Aussichtspunkt der Rabeflue' +
       ' und der Zielarena der ersten Etappe.\n' +
       '\n' +
-      'Die idyllische Zielkulisse auf der Rabeflue bietet für alle wie immer den verdienten Lohn für den steilen Aufstieg und den absolvierten 280 Höhemetern.\n' +
+      'Die idyllische Zielkulisse auf der Rabeflue bietet für alle wie immer den verdienten Lohn für den steilen Aufstieg und den absolvierten 280 Höhenmetern.\n' +
       '\n' +
-      'Runter geht’s dann gemütlicher ohne Zeitdruck zurück zum WKZ. Dort wartet bereits ein kleines Buffet mit Kuchen und Früchten,' +
-      ' um möglichst schnell die Energiereserven wieder aufzufüllen für die nächsten zwei Etappen.</p>',
+      'Runter geht’s dann gemütlicher und ohne Zeitdruck zurück zum WKZ. Dort wartet bereits ein kleines Buffet mit Kuchen und Früchten,' +
+      ' um möglichst schnell die Energiereserven für die nächsten zwei Etappen aufzufüllen.</p>',
     images: [
       './assets/rabeflue/IMG_20190119_152233.jpg',
       './assets/rabeflue/IMG-20180321-WA0014.jpg',
@@ -206,19 +206,19 @@ export const STAGES:  RaceDetail[] = [
     stageName: 'Haltenegg',
     distance: 4,
     altitude: 480,
-    date: new Date(2019, 6, 5).getTime(),
+    date: new Date(2019, 5, 5).getTime(),
     timeToBeat: '???',
     map: 'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FhnUZTKAIS-Wajwb-god9DQ&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&E=2617136.77&N=1177022.97&zoom=7',
     description: '<h2>Steil ist geil</h2>' +
-      '<p class="text">Die diesjährige Ausgabe der berüchtigten Haltenegg-etappe wurde etwas entschärft.' +
-      ' Die Strecke - mann nennt sie auch die Streif von Thun - startet im historischen Schlosspark Hünegg.' +
-      ' Nach einer Seightseeing-Runde im Park heisst kommt der erste Steilhang durchs Dorf ab in den Wald.' +
+      '<p class="text">Die diesjährige Ausgabe der berüchtigten Haltenegg-Etappe wurde etwas entschärft.' +
+      ' Die Strecke - man nennt sie auch die Streif von Thun - startet im historischen Schlosspark Hünegg.' +
+      ' Nach einer Seightseeing-Runde im Park kommt ein erster Steilhang durchs Dorf.' +
       ' Dieser darf nicht zu scharf attakiert werden, denn die 4km lange Strecke hat es in sich.' +
       ' Nach dem sogenannten "Loueli-cheer" im Wald sollte noch genug Energie in den Beinen sein, um die Waldgrenze zu durchbrechen.' +
-      ' Nach einer ("Achtung: Es geht sogar runter!") traverse kommt ein harter Schlussaufstieg auf die Haltenegg. ' +
-      'Dort wartet wie immer ein einzigartiges Panorama auf die Läufer, welche sich wagemutig den Berg hinauf spurteten. ' +
+      ' Nach einer Traverse ("Achtung: Es geht sogar runter!") kommt ein harter Schlussaufstieg auf die Haltenegg. ' +
+      'Dort wartet wie immer ein einzigartiges Panorama auf die Läufer und Läuferinnen, welche sich wagemutig den Berg hinauf spurteten. ' +
       'Insgesamt wurden hier 480 Höhenmeter überwunden und wahrscheinlich kann man von hier oben jedem einzelnen Meter einen Gipfel im Panorama zuordnen.' +
-      ' Um die Regeneration anzukurbeln wird empfohlen, genussvoll den Abstieg zu Fuss anzutreten. Wem aber die Beine versagen wird auch ein Shuttle angeboten.</p>',
+      ' Um die Regeneration anzukurbeln wird empfohlen, genussvoll den Abstieg zu Fuss anzutreten. Wem aber die Beine versagen, wird auch ein Shuttle angeboten.</p>',
     images: [
       './assets/haltenegg/IMG_3255.JPG',
       './assets/haltenegg/IMG_3299.JPG',
@@ -230,7 +230,7 @@ export const STAGES:  RaceDetail[] = [
     stageName: 'Vesuv',
     distance: 5.1,
     altitude: 560,
-    date: new Date(2019, 6, 6).getTime(),
+    date: new Date(2019, 5, 6).getTime(),
     timeToBeat: '25:00',
     map: 'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FQlpUvDZ1QM602IlIL6eUOA&layers_visibility=false,false,false,false,false,true&layers_timestamp=18641231,,,,,&catalogNodes=457,458,491,510&E=2617192.73&N=1177136.71&zoom=7',
     description: '<h2>Die Königsetappe </h2>' +
