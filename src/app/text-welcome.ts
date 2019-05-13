@@ -23,9 +23,14 @@ export const TEXTWELCOME: DataInformationCard[] = [
         type: 'scrollTo'
       },
       {
-        link: 'btn2',
-        value: 'zum Team',
-        type: 'scrollTo'
+        link: 'http://entry.picoevents.ch/',
+        type: 'newPage',
+        value: 'Anmelden'
+      },
+      {
+        link: './assets/files/Weisungen_UCT_2019.pdf',
+        value: 'Weisungen',
+        type: 'newPage'
       }
     ]
   },
@@ -155,8 +160,9 @@ export const INFOCUP: DataInformationCard = {
         'Der Uphill Champion Thun 2019 ist auf keinen Fall weniger hart als die erste Ausgabe. ' +
         'Mit Einzelstart, Massenstart und Verfolgung bieten wir dieses Jahr auch wieder ein abwechslungsreiches Programm. \n ' +
         'Auf die Läufer und Läuferinnen warten unteranderem zwei neue, wunderschöne aber harte Strecken: \n ' +
-        'Neu fällt der Startschuss für den Berglauf-Cup in Steffisburg. Von dort führt die Strecke auf die Rabeflue. \n' +
-        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Teilnehmenden müssen sich nicht mehr vom quasi überhängenden Streckenverlauf fürchten.'
+        'Neu fällt der Startschuss für den Berglauf-Cup in Steffisburg. Von dort führt die Strecke auf die Rabeflue.' +
+        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Teilnehmenden müssen sich nicht mehr vom quasi überhängenden Streckenverlauf fürchten.' +
+        '<br><br> Weiterführende Informationen:'
       ,
       title: 'Uphill Champion Thun 2019',
       pictureUrl: '',
@@ -164,10 +170,15 @@ export const INFOCUP: DataInformationCard = {
     },
   buttonInformation: [
     {
-      link: '/stages',
-      value: 'Mehr erfahren',
-      type: 'thisPage'
+      link: './assets/files/Weisungen_UCT_2019.pdf',
+      value: 'Weisungen',
+      type: 'newPage'
     },
+    {
+      link: '/stages',
+      value: 'Strecken',
+      type: 'thisPage'
+    }
   ]
 };
 

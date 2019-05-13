@@ -24,6 +24,44 @@
 
 }
 
+#sponsorOne{
+  background-image: url("../../assets/sponsors/sp2.png");
+}
+#sponsorTow{
+  background-image: url("../../assets/sponsors/logo.png");
+}
+#sponsorThree{
+  background-image: url("../../assets/sponsors/Logo_aek.png");
+}
+#sponsorFour{
+  background-image: url("../../assets/sponsors/GBSLogo18.png");
+}
+#sponsorFife{
+  background-image: url("../../assets/sponsors/Landi_Logo.svg");
+}
+#sponsorSix{
+  background-image: url("../../assets/sponsors/picotiming.svg");
+}
+
+.sponsors{
+  width: 80%;
+  height: 85px;
+  margin-bottom: 1em;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.cont-sponsors{
+  background-color: rgba(182, 182, 182, 0.56);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 1em;
+}
+
 
 @media only screen and (max-width: 992px) {
   .parallax-window h1{
@@ -35,6 +73,9 @@
   }
   .uct2019{
     min-height: unset;
+  }
+  .sponsors{
+    background-size: 75%;
   }
 
 }
