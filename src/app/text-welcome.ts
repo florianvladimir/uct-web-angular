@@ -7,6 +7,24 @@ export const TEXTWELCOME: DataInformationCard[] = [
   {
     textInformation:
       {
+        title: 'UCT 2019 - E1: Rabeflueh',
+        pictureUrl: './assets/rabeflue/IMG_20190604_193526.jpg',
+        pictureAlt: 'Blick Richtung Laufgelände',
+        text: 'Der Berglaufcup ist auf der Rabenflueh angekommen! \n \n Über 30 Läuferinnen und Läufer absolvierten die wunderschöne und anspruchsvolle 2.7 Kilometer lange Strecke. ' +
+          'Oben angekommen, konnten sie die Aussicht auf die kanpp 300m tiefer gelegene Stadt Thun und die Umgebung geniessen. \n \n  Trotz des warmen Wetters wurden sehr schnelle Zeiten gelaufen. ' +
+          'Das UCT-OK gratuliert allen Teilnehmenden\n \n \n \n'
+      },
+    buttonInformation: [
+            {
+        link: './assets/files/UPHILL2019E1_Results.pdf',
+        value: 'Resultate',
+        type: 'newPage'
+      }
+    ]
+  },
+  {
+    textInformation:
+      {
         title: 'Uphill Champion Thun',
         pictureUrl: './assets/stockhorn.jpg',
         pictureAlt: 'Blick Richtung Laufgelände',
@@ -189,7 +207,7 @@ export const STAGES:  RaceDetail[] = [
     distance: 2.7,
     altitude: 280,
     date: new Date(2019, 5, 4).getTime(),
-    timeToBeat: '???',
+    timeToBeat: '12:02',
     map: 'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FggUK-4rVSa2o0j_aP4mVDQ&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&E=2615190.74&N=1179493.86&zoom=7',
     description: '<h2>Top of Thun</h2>' +
       '<p class="text">Auf die Plätze, fertig, los! Die diesjährige Ausgabe des Uphill Champions wird wieder à la Prolog mit Einzelstart stattfinden.' +
@@ -218,7 +236,7 @@ export const STAGES:  RaceDetail[] = [
     distance: 4,
     altitude: 480,
     date: new Date(2019, 5, 5).getTime(),
-    timeToBeat: '???',
+    timeToBeat: '21:20',
     map: 'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2FhnUZTKAIS-Wajwb-god9DQ&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&E=2617136.77&N=1177022.97&zoom=7',
     description: '<h2>Steil ist geil</h2>' +
       '<p class="text">Die diesjährige Ausgabe der berüchtigten Haltenegg-Etappe wurde etwas entschärft.' +
