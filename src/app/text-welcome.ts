@@ -7,17 +7,34 @@ export const TEXTWELCOME: DataInformationCard[] = [
   {
     textInformation:
       {
+        title: 'UCT 2019 - E2: Haltenegg',
+        pictureUrl: './assets/haltenegg/IMG_E2.JPG',
+        pictureAlt: 'Blick Richtung Laufgelände',
+        text: 'Auch dieses Jahr führte der Uphill Champion wieder auf die Haltenegg. Gleiches Ziel aber eine total andere Strecke. ' +
+          'Wie es den Teilnehmenden bei der zweiten UCT-Etappe gelaufen ist, kannst du in den Resultaten nachlesen!\n '
+      },
+    buttonInformation: [
+      {
+        link: './assets/files/UPHILL2019E2_Results.pdf',
+        value: 'Resultate E2',
+        type: 'newPage'
+      }
+    ]
+  },
+  {
+    textInformation:
+      {
         title: 'UCT 2019 - E1: Rabeflueh',
         pictureUrl: './assets/rabeflue/IMG_20190604_193526.jpg',
         pictureAlt: 'Blick Richtung Laufgelände',
         text: 'Der Berglaufcup ist auf der Rabenflueh angekommen! \n \n Über 30 Läuferinnen und Läufer absolvierten die wunderschöne und anspruchsvolle 2.7 Kilometer lange Strecke. ' +
           'Oben angekommen, konnten sie die Aussicht auf die kanpp 300m tiefer gelegene Stadt Thun und die Umgebung geniessen. \n \n  Trotz des warmen Wetters wurden sehr schnelle Zeiten gelaufen. ' +
-          'Das UCT-OK gratuliert allen Teilnehmenden\n \n \n \n'
+          'Das UCT-OK gratuliert allen Teilnehmenden\n '
       },
     buttonInformation: [
             {
         link: './assets/files/UPHILL2019E1_Results.pdf',
-        value: 'Resultate',
+        value: 'Resultate E1',
         type: 'newPage'
       }
     ]

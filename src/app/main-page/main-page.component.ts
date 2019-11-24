@@ -3,6 +3,7 @@ import {CARDTEAM, TEXTWELCOME} from "../text-welcome";
 import {ReloadHomeService} from "./services/reload-home.service";
 import {IdScrollService} from "../custom-components/id-scroll.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {NewsService} from "./services/news.service";
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ export class MainPageComponent implements OnInit, AfterViewInit {
   pic1 = './assets/DSC08248.jpg';
   pic2 = './assets/IMG2237.jpg';
   pic3 = './assets/finish.jpg';
-  textWelcome = TEXTWELCOME;
+  //textWelcome = TEXTWELCOME;
+  textWelcome;
   informationTeam = CARDTEAM;
 
   reloadService: ReloadHomeService;
@@ -22,7 +24,7 @@ export class MainPageComponent implements OnInit, AfterViewInit {
 
   partParam: string;
 
-  constructor(reload: ReloadHomeService, scrollService: IdScrollService, private activatedRoute: ActivatedRoute) {
+  constructor(reload: ReloadHomeService, scrollService: IdScrollService, private activatedRoute: ActivatedRoute, private newsService: NewsService) {
     this.reloadService = reload;
     this.activatedRoute.queryParams.subscribe(params => {
       this.partParam = params['part'];
@@ -39,6 +41,10 @@ export class MainPageComponent implements OnInit, AfterViewInit {
     if(this.reloadService.getIfMustReload()){
       window.location.reload();
     }
+    this.newsService.getNews().subscribe(result => {
+      this.textWelcome = result;
+      //console.log(result);
+    })
   }
 
   ngAfterViewInit(): void {

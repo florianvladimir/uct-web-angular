@@ -84,6 +84,13 @@
         <!--}-->
       <!--}-->
     <!--</script>-->
+
+    <script>
+      if(localStorage.getItem("version") !== '1'){
+        localStorage.setItem("version", '1');
+        location.reload();
+      }
+    </script>
   </app-root>
 </body>
 </html>

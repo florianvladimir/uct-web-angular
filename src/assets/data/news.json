@@ -1,0 +1,118 @@
+[
+  {
+    "textInformation": {
+      "title": "UCT 2019 - E3: Vesuv",
+      "pictureUrl": "./assets/vesuv/DSC_3507.JPG",
+      "pictureAlt": "Blick Richtung Laufgelände",
+      "text": "Ladies and Gentleman. Mit dem heutigen Tag konnten wir erfolgreich den Uphill Champion 2019 abschliessen. Simon Zahnd kämpfte sich als erster ins Ziel. Bei den Frauen erklommen Kim Hadorn als erste den Vesuv. Die schnellste Etappen Zeit machte Fabian Aebersold mit 27:20 und einem sensationellen Schlussspurt. Wir hatten an allen drei Etappen Glück mit dem Wetter. Danke an alle die gekommen sind und bis nächstes Jahr!"
+    },
+
+    "buttonInformation": [
+      {
+        "link": "./assets/files/UPHILL2019E3_Results.pdf",
+        "value": "Resultate E3",
+        "type": "newPage"
+      },
+      {
+        "link": "./assets/files/UPHILL2019E3_Results-MultiStage.pdf",
+        "value": "Gesamtresultat",
+        "type": "newPage"
+      }
+    ]
+  },
+  {
+    "textInformation": {
+      "title": "UCT 2019 - E2: Haltenegg",
+      "pictureUrl": "./assets/haltenegg/IMG_E2.JPG",
+      "pictureAlt": "Blick Richtung Laufgelände",
+      "text": "Auch dieses Jahr führte der Uphill Champion wieder auf die Haltenegg. Gleiches Ziel aber eine total andere Strecke. Wie es den Teilnehmenden bei der zweiten UCT-Etappe gelaufen ist, kannst du in den Resultaten nachlesen!\n "
+    },
+    "buttonInformation": [
+      {
+        "link": "./assets/files/UPHILL2019E2_Results.pdf",
+        "value": "Resultate E2",
+        "type": "newPage"
+      },
+      {
+        "link": "./assets/files/UPHILL2019E2_Results-MultiStage.pdf",
+        "value": "Zwischenrangliste",
+        "type": "newPage"
+      }
+    ]
+  },
+  {
+    "textInformation": {
+      "title": "UCT 2019 - E1: Rabeflueh",
+      "pictureUrl": "./assets/rabeflue/IMG_20190604_193526.jpg",
+      "pictureAlt": "Blick Richtung Laufgelände",
+      "text": "Der Berglaufcup ist auf der Rabenflueh angekommen! \n \n Über 30 Läuferinnen und Läufer absolvierten die wunderschöne und anspruchsvolle 2.7 Kilometer lange Strecke. Oben angekommen, konnten sie die Aussicht auf die kanpp 300m tiefer gelegene Stadt Thun und die Umgebung geniessen. \n \n  Trotz des warmen Wetters wurden sehr schnelle Zeiten gelaufen. Das UCT-OK gratuliert allen Teilnehmenden\n "
+    },
+    "buttonInformation": [
+      {
+        "link": "./assets/files/UPHILL2019E1_Results.pdf",
+        "value": "Resultate E1",
+        "type": "newPage"
+      }
+    ]
+  },
+  {
+    "textInformation": {
+      "title": "Uphill Champion Thun",
+      "pictureUrl": "./assets/stockhorn.jpg",
+      "pictureAlt": "Blick Richtung Laufgelände",
+      "text": "Weit über der Stadt und dem See thront das Ziel des Uphill Champions Thun Cups:\n  Der Vesuv.\n \n Der Weg dorthin ist schwer. Drei harte und steile Strecken warten darauf, bis sich die Läuferinnen und Läufer des Berglauf-Cups an ihnen die Zähne ausbeissen. Die erste Etappe auf die Rabeflue ist eine eher kurze aber trotzdem intensive Etappe. Bei den zwei anderen Etappen gibt es mehr Höhenmeter und eine «Bergankunft». Oben angekommen wartet auf die Teilnehmer nebst sauren Beinen und einem rasenden Herz eine schöne Aussicht auf die mächtige Bergwelt, die Stadt und den See."
+    },
+    "buttonInformation": [
+      {
+        "link": "btn1",
+        "value": "UCT 2019",
+        "type": "scrollTo"
+      },
+      {
+        "link": "http://entry.picoevents.ch/",
+        "type": "newPage",
+        "value": "Anmelden"
+      },
+      {
+        "link": "./assets/files/Weisungen_UCT_2019.pdf",
+        "value": "Weisungen",
+        "type": "newPage"
+      }
+    ]
+  },
+  {
+    "textInformation": {
+      "title": "Uphill Champion Thun 2018",
+      "pictureUrl": "./assets/IMG_3341.JPG",
+      "pictureAlt": "Ziel auf dem Vesuv",
+      "text": "Im Juni 2018 fand die erste Austragung des Uphill Champion Thun statt. Bei wunderschönem Wetter kämpften an 3 verschiedenen Abenden circa 50 Teilnehmer um den sagenumworbenen Gesamtsieg. Ihre Gegner waren nicht nur das hochkarätige Starterfeld, sondern auch die taffen und teils sehr steilen Strecken. \n \n Der Lauf wurde seinem Namen allemal gerecht. Kim Hadorn und Florian Schneider waren bei diesen Streckenprofilen kaum zu bremsen. \n Zurecht wurden sie mit dem Adelstitel 'Uphill Champion' geehrt. Bei den Junioren setzten sich Dominic Müller und Lea Troxler souverän durch."
+    },
+    "buttonInformation": [
+      {
+        "link": "https://2018.uphillchampion.ch",
+        "value": "Mehr",
+        "type": "newPage"
+      },
+      {
+        "link": "https://pictures.uphillchampion.ch/",
+        "value": "Fotos",
+        "type": "newPage"
+      }
+    ]
+  },
+  {
+    "textInformation": {
+      "title": "Bärner Bärgloufcup",
+      "pictureUrl": "http://www.baergloufcup.ch/images/logo.svg",
+      "pictureAlt": "Logo Bärner Bärgloufcup",
+      "text": "20 Kilometer nördlich von Thun, rund um die Bundeshauptstadt, findet anfangs August jeweils der Bärner Bärgloufcup\n statt. 5 Etappen, unter anderem auch der Gurten, absolvieren die begeisterten Teilnehmenden.\n Fünf Läufe in fünf Tagen – für einmal nehmen es die Bernerinnen und Berner nicht gemütlich!"
+    },
+    "buttonInformation": [
+      {
+        "link": "http://www.baergloufcup.ch/",
+        "value": "Mehr",
+        "type": "newPage"
+      }
+    ]
+  }
+]

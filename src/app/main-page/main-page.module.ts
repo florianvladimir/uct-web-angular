@@ -9,18 +9,23 @@ import {InformationPageComponent} from "./information-page/information-page.comp
 import {MainPageComponent} from "./main-page.component";
 import {MatButtonModule, MatCardModule, MatExpansionModule} from "@angular/material";
 import {RaceDetailComponent} from './information-page/race-detail/race-detail.component';
+import {NewsService} from "./services/news.service";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   imports: [
     CommonModule,
     CustomComponentsModule,
-    NgbModule,BrowserModule,
+    NgbModule,
+    BrowserModule,
+    HttpClientModule,
     FontAwesomeModule,
     ParallaxModule,
     MatExpansionModule,
     MatButtonModule,
     MatCardModule,
   ],
+  providers: [NewsService],
   declarations: [MainPageComponent, InformationPageComponent, RaceDetailComponent],
   exports: [MainPageComponent]
 })
