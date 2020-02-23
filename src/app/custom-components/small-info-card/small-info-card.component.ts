@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { faCalendar, faMapMarkerAlt, faTrophy, faMountain, faClock, faRoute } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCalendar,
+  faMapMarkerAlt,
+  faTrophy,
+  faMountain,
+  faClock,
+  faRoute,
+  faRunning
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'small-info-card',
@@ -11,9 +19,8 @@ export class SmallInfoCardComponent {
   faCalendar = faCalendar;
   faLocation = faMapMarkerAlt;
   faTrophy = faTrophy;
-  faMountain = faMountain;
   faClock = faClock;
-  faRoute = faRoute;
+  faRunning = faRunning;
 
   constructor() { }
 

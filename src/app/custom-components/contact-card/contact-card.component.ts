@@ -8,16 +8,12 @@ import {ContactCardInformation} from './model/contact-card-text.interface';
   templateUrl: './contact-card.component.html',
   styleUrls: ['./contact-card.component.scss']
 })
-export class ContactCardComponent implements OnInit {
+export class ContactCardComponent {
 
   constructor(private sanitization: DomSanitizer) { }
 
   @Input()
   public cardInformation: ContactCardInformation;
-  photoPath;
 
-  ngOnInit() {
-    this.photoPath = this.sanitization.bypassSecurityTrustStyle(`url(${this.cardInformation.photoPath})`);
-  }
 
 }

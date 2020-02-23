@@ -11,6 +11,7 @@ import {ReloadHomeService} from "./main-page/services/reload-home.service";
 import {StagePageModule} from "./stage-page/stage-page.module";
 import {IdScrollService} from "./custom-components/id-scroll.service";
 import {CustomComponentsModule} from "./custom-components/custom-components.module";
+import { AllNewsComponent } from './all-news/all-news.component';
 
 registerLocaleData(localeDECH);
 
@@ -21,6 +22,7 @@ registerLocaleData(localeDECH);
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    AllNewsComponent,
   ],
   imports: [
     CommonModule,

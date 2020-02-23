@@ -7,76 +7,93 @@
       <small-info-card></small-info-card>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-7">
-      <information-card [information]="price" [titleWithBorder]="true" [heightFitParent]="true">
-        <div class="entry-box">
-          <div class="row">
-            <div class="col-4">
-              <div class="price title-bubble">
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="price title-bubble">
-                <p class="bubble-cont">Etappe</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="price title-bubble">
-                <p class="bubble-cont">Cup</p>
-              </div>
-            </div>
-          </div>
-          <div class="row entry-row">
-            <div class="col-4">
-                <p class="title-category">
-                  Erwachsen<br>
-                  Ab Jg. 2001
-                </p>
-            </div>
-            <div class="col-4">
-              <div class="bubble price">
-                <p class="bubble-cont">8.-</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="bubble price">
-                <p class="bubble-cont">18.-</p>
-              </div>
-            </div>
-          </div>
-          <div class="row entry-row">
-            <div class="col-4">
-                <p class="title-category">
-                  Junioren<br>
-                  Bis Jg. 2002
-                </p>
-            </div>
-            <div class="col-4">
-              <div class="bubble price">
-                <p class="bubble-cont">6.-</p>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="bubble price">
-                <p class="bubble-cont">12.-</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </information-card>
-    </div>
-    <div class="col-lg-5">
-      <information-card [information]="entry" [titleWithBorder]="true" [heightFitParent]="true">
-      </information-card>
-    </div>
-  </div>
+  <information-card [information]="route" [heightFitParent]="true" [titleWithBorder]="true">
+    <app-map
+      [url]="'https://map.geo.admin.ch/embed.html?lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege,KML%7C%7Chttps:%2F%2Fpublic.geo.admin.ch%2Fe7MsYSaRSkCdAvzSI_uXCg&layers_visibility=false,false,false,false,true&layers_timestamp=18641231,,,,&E=2625272.92&N=1172000.94&zoom=6'">
+    </app-map>
 
-  <div class="accordion-stage">
-    <mat-accordion>
-      <race-detail *ngFor="let info of temp" [stageInfo]="info"></race-detail>
-    </mat-accordion>
-  </div>
+
+  </information-card>
+  <information-card [information]="profil" [heightFitParent]="true" [titleWithBorder]="true">
+    <mat-radio-group aria-label="Select an option" (change)="setShortRoute($event)">
+      <mat-radio-button value="1" [checked]="true">Hauptlauf</mat-radio-button>
+      <mat-radio-button value="2">Kurz</mat-radio-button>
+      <mat-radio-button value="3">Staffel Strecke 1</mat-radio-button>
+      <mat-radio-button value="4">Staffel Strecke 2</mat-radio-button>
+    </mat-radio-group>
+    <div id="altitude"></div>
+  </information-card>
+
+  <!--  <div class="row">-->
+  <!--    <div class="col-lg-7">-->
+  <!--      <information-card [information]="price" [titleWithBorder]="true" [heightFitParent]="true">-->
+  <!--        <div class="entry-box">-->
+  <!--          <div class="row">-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="price title-bubble">-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="price title-bubble">-->
+  <!--                <p class="bubble-cont">Etappe</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="price title-bubble">-->
+  <!--                <p class="bubble-cont">Cup</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="row entry-row">-->
+  <!--            <div class="col-4">-->
+  <!--                <p class="title-category">-->
+  <!--                  Erwachsen<br>-->
+  <!--                  Ab Jg. 2001-->
+  <!--                </p>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="bubble price">-->
+  <!--                <p class="bubble-cont">8.-</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="bubble price">-->
+  <!--                <p class="bubble-cont">18.-</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="row entry-row">-->
+  <!--            <div class="col-4">-->
+  <!--                <p class="title-category">-->
+  <!--                  Junioren<br>-->
+  <!--                  Bis Jg. 2002-->
+  <!--                </p>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="bubble price">-->
+  <!--                <p class="bubble-cont">6.-</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-4">-->
+  <!--              <div class="bubble price">-->
+  <!--                <p class="bubble-cont">12.-</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </information-card>-->
+  <!--    </div>-->
+  <!--    <div class="col-lg-5">-->
+  <!--      <information-card [information]="entry" [titleWithBorder]="true" [heightFitParent]="true">-->
+  <!--      </information-card>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <!--  <div class="accordion-stage">-->
+  <!--    <mat-accordion>-->
+  <!--      <race-detail *ngFor="let info of temp" [stageInfo]="info"></race-detail>-->
+  <!--    </mat-accordion>-->
+  <!--  </div>-->
 
 
 </div>

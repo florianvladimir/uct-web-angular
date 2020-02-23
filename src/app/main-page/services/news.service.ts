@@ -11,4 +11,8 @@ export class NewsService  {
   getNews(): Observable<DataInformationCard[]> {
     return this.http.get<DataInformationCard[]>('assets/data/news.json');
   }
+
+  getFullRoute(): Observable<any[]> {
+    return this.http.get<any[]>('assets/data/niederhorn-full-route.json');
+  }
 }

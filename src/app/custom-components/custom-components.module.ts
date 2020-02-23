@@ -11,6 +11,7 @@ import {FooterComponent} from './footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { SmallInfoCardComponent } from './small-info-card/small-info-card.component';
 import { MapComponent } from './map/map.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { MapComponent } from './map/map.component';
     MatButtonModule,
     NgbModule,
     FontAwesomeModule,
-    MatTooltipModule
+    MatTooltipModule,
+    RouterModule
   ],
   declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent],
   exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent]

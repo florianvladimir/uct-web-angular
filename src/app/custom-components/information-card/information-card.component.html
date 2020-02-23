@@ -6,7 +6,7 @@
   <img mat-card-image src="{{information.textInformation.pictureUrl}}" alt="{{information.textInformation.pictureAlt}}"
        style="object-fit: cover" [ngClass]="{'contain': information.textInformation.title.includes('Bärner Bärgloufcup')}"
         *ngIf="information.textInformation.pictureUrl !== ''">
-  <mat-card-content>
+  <mat-card-content *ngIf="information.textInformation.text !== null">
     <p [innerHTML]="information.textInformation.text" [ngClass]="{'text-margin': titleWithBorder}"></p>
     <ng-content></ng-content>
   </mat-card-content>

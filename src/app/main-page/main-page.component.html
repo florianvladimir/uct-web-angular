@@ -6,18 +6,24 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome">
-        <information-card [information]="data" (scroll)="scrollTo($event)" [btn1]="uct2019"
-                          [btn2]="team"></information-card>
+      <div class="col-12">
+        <information-card [information]="textWelcome[0]" (scroll)="scrollTo($event)" [btn1]="uct2019"></information-card>
       </div>
+      <information-card class="col-12" [information]="moreNews"></information-card>
+<!--      <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome | slice:1:3">-->
+<!--        <information-card [information]="data" (scroll)="scrollTo($event)" [btn1]="uct2019"-->
+<!--                          [btn2]="team"></information-card>-->
+<!--      </div>-->
     </div>
+
+
   </div>
 </div>
 
 
 <!--UCT2019-->
 <div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3442.JPG" style="height: 50vh"><h1
-  class="bigTxt" style="padding: 150px" id="uct2019" #uct2019>Uphill Champion Thun - 2019</h1></div>
+  class="bigTxt" style="padding: 150px" id="uct2019" #uct2019>Niederhorn Berglauf</h1></div>
 <div class="main-content uct2019">
   <information-page></information-page>
 </div>
@@ -29,8 +35,9 @@
 <div class="main-content">
   <div class="container">
     <div class="row">
+      <information-card class="col-12" style="margin-bottom: 1em" [titleWithBorder]="true" [information]="aboutUs"></information-card>
       <ng-container *ngFor="let data of informationTeam">
-        <div class="col-xl-6">
+        <div class="col-md-3 col-6">
           <app-contact-card [cardInformation]="data"></app-contact-card>
         </div>
       </ng-container>
@@ -42,14 +49,14 @@
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3263.JPG"
      style="height: 100vh; position:relative;">
-  <div class="container cont-sponsors">
-    <div class="row">
-      <div class="col-4 sponsors" id="sponsorOne"></div>
-      <div class="col-4 sponsors" id="sponsorTow"></div>
-      <div class="col-4 sponsors" id="sponsorSix"></div>
-      <div class="col-4 sponsors" id="sponsorFour"></div>
-      <div class="col-4 sponsors" id="sponsorFife"></div>
-      <div class="col-4 sponsors" id="sponsorThree"></div>
-    </div>
-  </div>
+<!--  <div class="container cont-sponsors">-->
+<!--    <div class="row">-->
+<!--      <div class="col-4 sponsors" id="sponsorOne"></div>-->
+<!--      <div class="col-4 sponsors" id="sponsorTow"></div>-->
+<!--      <div class="col-4 sponsors" id="sponsorSix"></div>-->
+<!--      <div class="col-4 sponsors" id="sponsorFour"></div>-->
+<!--      <div class="col-4 sponsors" id="sponsorFife"></div>-->
+<!--      <div class="col-4 sponsors" id="sponsorThree"></div>-->
+<!--    </div>-->
+<!--  </div>-->
 </div>

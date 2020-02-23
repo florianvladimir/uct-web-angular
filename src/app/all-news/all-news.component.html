@@ -1,0 +1,11 @@
+<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3263.JPG"
+     style="height: 80vh; position:relative;">
+  <h1 class="bigTxt" style="padding: 350px 0 !important;">Alle News</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome">
+      <information-card [information]="data"></information-card>
+    </div>
+  </div>
+</div>

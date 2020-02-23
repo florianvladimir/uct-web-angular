@@ -1,19 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {MainPageComponent} from "./main-page/main-page.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {StagesComponent} from "./stage-page/stages/stages.component";
+import {AllNewsComponent} from "./all-news/all-news.component";
 
 const appRoutes: Routes = [
-  { path: 'home', component: MainPageComponent},
-  { path: 'stages', component: StagesComponent},
-
-  { path: '',
+  {path: 'home', component: MainPageComponent},
+  {path: 'stages', component: StagesComponent},
+  {path: 'news', component: AllNewsComponent},
+  {
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: PageNotFoundComponent }
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
@@ -24,4 +26,5 @@ const appRoutes: Routes = [
   declarations: [],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

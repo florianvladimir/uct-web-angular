@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {CARDTEAM, TEXTWELCOME} from "../text-welcome";
+import {ABOUT_US, CARDTEAM, MORE_NEWS, TEXTWELCOME} from "../text-welcome";
 import {ReloadHomeService} from "./services/reload-home.service";
 import {IdScrollService} from "../custom-components/id-scroll.service";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -11,12 +11,11 @@ import {NewsService} from "./services/news.service";
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit, AfterViewInit {
-  pic1 = './assets/DSC08248.jpg';
-  pic2 = './assets/IMG2237.jpg';
-  pic3 = './assets/finish.jpg';
-  //textWelcome = TEXTWELCOME;
   textWelcome;
   informationTeam = CARDTEAM;
+  moreNews = MORE_NEWS;
+  aboutUs = ABOUT_US;
+
 
   reloadService: ReloadHomeService;
 
@@ -33,6 +32,7 @@ export class MainPageComponent implements OnInit, AfterViewInit {
   }
 
   scrollTo(el: Element) {
+    console.log(el);
     //el.scrollIntoView({block: 'start', behavior: 'smooth'});
     this.scrollService.scrollTo(el);
   }

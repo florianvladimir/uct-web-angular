@@ -61,6 +61,9 @@
   color: white;
 }
 
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
 
 
 @media only screen and (max-width: 992px) {

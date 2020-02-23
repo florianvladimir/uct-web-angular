@@ -1,10 +1,19 @@
-<div class="contact-card">
-  <div class="contact-card-pic" [style.background-image]='photoPath'>
-  </div>
+<!--<div class="contact-card">-->
+<!--  <div class="contact-card-pic" [style.background-image]='photoPath'>-->
+<!--  </div>-->
 
-  <div class="contact-card-text">
-    <h4 class="contact-card-title">{{cardInformation.subTitle}}</h4>
-    <h3 class="contact-card-title">{{cardInformation.title}}</h3>
-    <p>{{cardInformation.text}}</p>
-  </div>
-</div>
+<!--  <div class="contact-card-text">-->
+<!--    <h4 class="contact-card-title">{{cardInformation.subTitle}}</h4>-->
+<!--    <h3 class="contact-card-title">{{cardInformation.title}}</h3>-->
+<!--    <p>{{cardInformation.text}}</p>-->
+<!--  </div>-->
+<!--</div>-->
+<mat-card style="margin-bottom: 1em">
+  <img mat-card-image [src]="cardInformation.photoPath" alt="Photo of team member">
+  <mat-card-header>
+    <mat-card-title style="margin: 0">{{cardInformation.title}}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content></mat-card-content>
+</mat-card>
+

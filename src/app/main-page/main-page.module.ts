@@ -4,13 +4,14 @@ import {CustomComponentsModule} from "../custom-components/custom-components.mod
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {BrowserModule} from "@angular/platform-browser";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {ParallaxModule} from "ngx-parallax";
 import {InformationPageComponent} from "./information-page/information-page.component";
 import {MainPageComponent} from "./main-page.component";
 import {MatButtonModule, MatCardModule, MatExpansionModule} from "@angular/material";
 import {RaceDetailComponent} from './information-page/race-detail/race-detail.component';
 import {NewsService} from "./services/news.service";
 import {HttpClientModule} from "@angular/common/http";
+import {AppRoutingModule} from "../app-routing.module";
+import {MatRadioModule} from "@angular/material/radio";
 
 @NgModule({
   imports: [
@@ -20,10 +21,11 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     HttpClientModule,
     FontAwesomeModule,
-    ParallaxModule,
     MatExpansionModule,
     MatButtonModule,
     MatCardModule,
+    AppRoutingModule,
+    MatRadioModule
   ],
   providers: [NewsService],
   declarations: [MainPageComponent, InformationPageComponent, RaceDetailComponent],

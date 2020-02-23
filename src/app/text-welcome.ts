@@ -32,7 +32,7 @@ export const TEXTWELCOME: DataInformationCard[] = [
           'Das UCT-OK gratuliert allen Teilnehmenden\n '
       },
     buttonInformation: [
-            {
+      {
         link: './assets/files/UPHILL2019E1_Results.pdf',
         value: 'Resultate E1',
         type: 'newPage'
@@ -53,7 +53,7 @@ export const TEXTWELCOME: DataInformationCard[] = [
       },
     buttonInformation: [
       {
-        link:  'btn1',
+        link: 'btn1',
         value: 'UCT 2019',
         type: 'scrollTo'
       },
@@ -119,53 +119,77 @@ export const TEXTWELCOME: DataInformationCard[] = [
 export const CARDTEAM: ContactCardInformation[] = [
   {
     photoPath: './assets/team/simi.jpg',
-    title: 'Simon Dubach',
+    title: 'Simon',
     subTitle: 'Laufleiter',
     text: 'Versucht die Übersicht zu halten in der Organisation und die motivierte Gruppe zu koordinieren.'
   },
   {
-    photoPath: './assets/team/flo.jpg',
-    title: 'Florian Moser',
-    subTitle: 'Webdesigner',
-    text: 'Unser Künstler im Team ist für die Website zuständig und übernimmt die ' +
-      'kreativen Aufgaben wie das Logo, Flyer etc. designen.'
-  },
-  {
     photoPath: './assets/team/riina.jpg',
-    title: 'Riina Jordi',
+    title: 'Riina',
     subTitle: 'Finanzen/Administration',
     text: 'Hat unsere Finanzen im Griff und ist verantwortlich für unsere überlebenswichtigen Sponsoren.'
   },
   {
-    photoPath: './assets/team/nici.jpg',
-    title: 'Nicolas Müller',
-    subTitle: 'Medien/Werbung',
-    text: 'Regelt unsere Probleme mit den Behörden und rechtlichen Angelegenheiten. ' +
-      'Meistens kaum zu bremsen mit wilden Ideen.'
-  },
-  {
-    photoPath: './assets/team/mara.jpeg',
-    title: 'Mara Brügger',
-    subTitle: 'Infrastruktur',
-    text: 'Unser Mädchen für Alles. Ist für die Infrastruktur des WKZ zuständig ' +
-      'und betreut unsere Social-Media Kanäle.'
-  },
-  {
     photoPath: './assets/team/andri.jpg',
-    title: 'Andri Jordi',
+    title: 'Andri',
     subTitle: 'Streckenchef',
     text: 'Unser Streckenchef kennt jeden Stein und alle Kurven auf dem steilen Weg nach oben.' +
       ' Die Königsetappe führt fast direkt zu seiner Haustür.'
   },
   {
+    photoPath: './assets/team/mara.jpeg',
+    title: 'Mara',
+    subTitle: 'Infrastruktur',
+    text: 'Unser Mädchen für Alles. Ist für die Infrastruktur des WKZ zuständig ' +
+      'und betreut unsere Social-Media Kanäle.'
+  },
+  {
+    photoPath: './assets/team/nici.jpg',
+    title: 'Nicolas',
+    subTitle: 'Medien/Werbung',
+    text: 'Regelt unsere Probleme mit den Behörden und rechtlichen Angelegenheiten. ' +
+      'Meistens kaum zu bremsen mit wilden Ideen.'
+  },
+  {
     photoPath: './assets/team/joey.jpg',
-    title: 'Joey Hadorn',
+    title: 'Lea',
     subTitle: 'Joker',
     text: 'Unser Super-Joker im Team mit seinen Kontakten in der Laufszene und Sponsoren.' +
       ' Als einer der schnellsten Läufer' +
       ' der Schweiz setzt er die Richtzeiten auf den drei Strecken. Seine Zeiten gilt es zu schlagen!'
+  },
+  {
+    photoPath: './assets/team/joey.jpg',
+    title: 'Joey',
+    subTitle: 'Joker',
+    text: 'Unser Super-Joker im Team mit seinen Kontakten in der Laufszene und Sponsoren.' +
+      ' Als einer der schnellsten Läufer' +
+      ' der Schweiz setzt er die Richtzeiten auf den drei Strecken. Seine Zeiten gilt es zu schlagen!'
+  },
+  {
+    photoPath: './assets/team/joey.jpg',
+    title: 'Siri',
+    subTitle: 'Joker',
+    text: 'Unser Super-Joker im Team mit seinen Kontakten in der Laufszene und Sponsoren.' +
+      ' Als einer der schnellsten Läufer' +
+      ' der Schweiz setzt er die Richtzeiten auf den drei Strecken. Seine Zeiten gilt es zu schlagen!'
+  },
+  {
+    photoPath: './assets/team/tim.jpg',
+    title: 'Tim',
+    subTitle: 'Joker',
+    text: 'Unser Super-Joker im Team mit seinen Kontakten in der Laufszene und Sponsoren.' +
+      ' Als einer der schnellsten Läufer' +
+      ' der Schweiz setzt er die Richtzeiten auf den drei Strecken. Seine Zeiten gilt es zu schlagen!'
+  },
+  {
+    photoPath: './assets/team/flo.jpg',
+    title: 'Florian',
+    subTitle: 'Webdesigner',
+    text: 'Unser Künstler im Team ist für die Website zuständig und übernimmt die ' +
+      'kreativen Aufgaben wie das Logo, Flyer etc. designen.'
   }
-  ];
+];
 
 export const RACEDATE: DateCardInformation[] = [
   {
@@ -191,33 +215,70 @@ export const RACEDATE: DateCardInformation[] = [
 export const INFOCUP: DataInformationCard = {
   textInformation:
     {
-      text: 'Auch 2019 findet der Uphill Champion Thun statt. In der ersten Juniwoche vom <strong>4. Juni - 6. Juni</strong> suchen wir den zweiten Uphill Champion. <br> \r\n' +
-        'Der Uphill Champion Thun 2019 ist auf keinen Fall weniger hart als die erste Ausgabe. ' +
-        'Mit Einzelstart, Massenstart und Verfolgung bieten wir dieses Jahr auch wieder ein abwechslungsreiches Programm. \n ' +
-        'Auf die Läufer und Läuferinnen warten unteranderem zwei neue, wunderschöne aber harte Strecken: \n ' +
-        'Neu fällt der Startschuss für den Berglauf-Cup in Steffisburg. Von dort führt die Strecke auf die Rabeflue.' +
-        'Bei der zweiten Etappe haben wir die Streckenführung etwas angepasst: Die Teilnehmenden müssen sich nicht mehr vom quasi überhängenden Streckenverlauf fürchten.' +
-        '<br><br> Weiterführende Informationen:'
+      text: 'Bei der ersten Austragung des Uphill Champion Thun in der neuen Dekade, bliebt nichts beim Alten: <br>' +
+        ' Ein einziger Lauf ersetzt die bisherigen drei Etappen. Der Ort des Geschehens verschiebt sich einige Kilometer nach Osten. ' +
+        'Aus Frühsommer wird Spätsommer und noch vieles mehr. <br> <br>' +
+        'Was sich aber nicht ändert ist, dass man auch dieses Jahr hart kämpfen und wohl auch leiden muss damit man oben auf dem Berg mit dem Berglaufadelstitel' +
+        ' „Uphill Champion Thun“ für ein Jahr zum Ritter geschlagen wird. <br> <br>' +
+        'Die Strecke führt vom Ufer des Thunersees durch Wälder und die alpine Landschaft der Region Beatenberg ' +
+        'herauf bis zu dem knapp 1400 Höhenmeter höher gelegene Niederhorn. <br>' +
+        'Angeboten wird auch eine verkürzte Variante, bei welcher man im Vorsass, nach 2/3 der Gesamtstrecke, starten wird. ' +
+        'Dort, der Mittelstation zwischen Beatenberg und Niederhorn, wird auch die Übergabezone sein, für Teams die den Lauf als Staffel absolvieren.'
       ,
-      title: 'Uphill Champion Thun 2019',
+      title: 'Neues Format, neue Herausforderung',
       pictureUrl: '',
       pictureAlt: ''
     },
+  buttonInformation: []
+};
+
+export const ROUTE: DataInformationCard = {
+  textInformation: {
+    text: '',
+    title: 'Strecke',
+    pictureAlt: '',
+    pictureUrl: '',
+  },
   buttonInformation: [
-    {
-      link: './assets/files/Weisungen_UCT_2019.pdf',
-      value: 'Weisungen',
-      type: 'newPage'
-    },
-    {
-      link: '/stages',
-      value: 'Strecken',
-      type: 'thisPage'
-    }
   ]
 };
 
-export const STAGES:  RaceDetail[] = [
+export const PROFIL: DataInformationCard = {
+  textInformation: {
+    text: '',
+    title: 'Streckenprofil',
+    pictureAlt: '',
+    pictureUrl: '',
+  },
+  buttonInformation: []
+};
+
+export const MORE_NEWS: DataInformationCard = {
+  textInformation: {
+    text: null,
+    title: 'Alle News',
+    pictureAlt: '',
+    pictureUrl: '',
+  },
+  buttonInformation: [{
+    link: '/news',
+    value: 'Hier kannst du alle News finden',
+    type: 'thisPage'
+  }]
+};
+
+export const ABOUT_US: DataInformationCard = {
+  textInformation: {
+    text: 'Wir sind ein engagiertes Team von jungen OL-Läufern aus der Region Thun. Vom Regionalkader bis zu Nationalkaderläufer sind wir selbst alles ambitionierte Sportler. Die Idee zum Uphill Champion ist uns während einem gemeinsamen Training gekommen und hat sich auch während und nach den Trainings entwickelt. Im Winter 2018 folgten aus unseren Ideen Taten. Wir bildeten ein siebenköpfiges Organisationsteam welches mit viel Enthusiasmus und Motivation dieses Projekt umsetzte. So fand im Juni 2018 die erste Austragung statt. Von Hünibach aus fanden an drei Abenden drei Läufe statt. Ein Jahr später gab es mit neuen Strecken die zweite Austragung des Berglauf-Cups. \n' +
+      'Wir organisieren den Anlass jeweils einem einfachen Rahmen. Durch unsere Freude und Leidenschaft am Laufen wollen wir für ein tolles Lauferlebnis sorgen. Neben der physischen Herausforderung sollen auch der Spass und das Knüpfen und Pflegen von Bekanntschaften neben den Läufen nicht zu kurz kommen.\n',
+    title: 'Über uns',
+    pictureUrl: '',
+    pictureAlt: ''
+  },
+  buttonInformation: []
+};
+
+export const STAGES: RaceDetail[] = [
   {
     stage: 'Etappe 1',
     stageName: 'Rabeflue',
