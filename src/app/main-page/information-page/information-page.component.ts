@@ -1,8 +1,10 @@
-import {Component, OnInit} from '@angular/core';
-import {INFOCUP, PROFIL, ROUTE, STAGES} from '../../text-welcome';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {PROFIL, ROUTE} from '../../text-welcome';
 import {ENTRY_CARD, PRICE_CARD} from "../../../assets/text/entry";
 import {NewsService} from "../services/news.service";
 import * as Highcharts from 'highcharts';
+import {DataInformationCard} from "../../custom-components/information-card/model/data-information-card.interface";
+import { CompetitionRulesComponent } from 'src/app/competition-rules/competition-rules.component';
 
 declare var require: any;
 let Boost = require('highcharts/modules/boost');
@@ -25,13 +27,12 @@ Annotations(Highcharts);
 export class InformationPageComponent implements OnInit {
 
 
-  info = INFOCUP;
+
+  public info: DataInformationCard;
 
   route = ROUTE;
 
   profil = PROFIL;
-
-  temp = STAGES;
 
   entry = ENTRY_CARD;
 
@@ -162,9 +163,13 @@ export class InformationPageComponent implements OnInit {
       this.options.series[0].data = this.routeData;
       Highcharts.chart('altitude', this.options);
     });
+    this.newsService.getUCT2020().subscribe(value => {
+      this.info = value['generalInfo'];
+    });
   }
 
   setShortRoute(event) {
+    this.options.annotations[0].labels[2].point.x = 9.9;
     if (event.value === "1") {
       this.options.series[0].data = this.routeData;
       Highcharts.chart('altitude', this.options);
@@ -172,16 +177,13 @@ export class InformationPageComponent implements OnInit {
       this.options.series[0].data = this.routeData.slice(0, 299);
       Highcharts.chart('altitude', this.options);
     } else {
-      // const tempData = [...this.shortRouteData.slice(299)];
-      // for (const i of tempData) {
-      //   i[0] = i[0]-7;
-      // }
       const tempData  = [];
       for (let i of this.routeData.slice(299)) {
         tempData.push([i[0]-7,i[1]]);
       }
       this.options.series[0].data =  tempData;
       this.options.xAxis.accessibility.rangeDescription = "Range: 0 to 4.7km.";
+      this.options.annotations[0].labels[2].point.x = 2.9;
       Highcharts.chart('altitude', this.options);
     }
   }

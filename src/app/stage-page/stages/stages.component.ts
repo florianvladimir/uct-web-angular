@@ -1,7 +1,4 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
-import {STAGES} from "../../text-welcome";
-import {DomSanitizer, SafeUrl} from "@angular/platform-browser";
-import {ReloadHomeService} from "../../main-page/services/reload-home.service";
+import {AfterViewInit, Component} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {IdScrollService} from "../../custom-components/id-scroll.service";
 
@@ -12,7 +9,7 @@ import {IdScrollService} from "../../custom-components/id-scroll.service";
 })
 export class StagesComponent implements AfterViewInit{
 
-  info = STAGES;
+  info = null;
 
 
   raceParam: string;

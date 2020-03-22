@@ -11,22 +11,14 @@
           <a href="https://www.facebook.com/Uphill-Champion-Thun-166380844179960/" target="_blank" matTooltip="Facebook">
             <fa-icon class="footer-icon" [icon]="faFacebook"></fa-icon>
           </a>
-          <a href="https://pictures.uphillchampion.ch/" target="_blank" matTooltip="Zu den Fotos">
-            <fa-icon class="footer-icon" [icon]="faImages"></fa-icon>
-          </a>
-          <a href="https://2018.uphillchampion.ch/" target="_blank" matTooltip="Alte Website">
-            <fa-icon class="footer-icon" [icon]="faCode"></fa-icon>
-          </a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 other">
-        <a href="mailto:info@uphillchampion.ch" matTooltip="Sende uns eine E-Mail">
-          <p class="footer-txt">Kontakt</p>
-        </a>
+        <button mat-button [routerLink]="['/impressum']">Kontakt</button>
       </div>
       <div class="col-lg-4 col-md-12">
         <div class="copy">
-          <fa-icon [icon]="faCopyright"></fa-icon> 2018 uphill champion thun
+          <fa-icon [icon]="faCopyright"></fa-icon> 2020 uphill champion thun
         </div>
       </div>
 

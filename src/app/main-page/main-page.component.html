@@ -1,62 +1,70 @@
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG2237.jpg" style="height: 100vh"><h1><img
-  src="./assets/logo_d_1.png" class="logo"></h1></div>
-
-
-<div class='main-content' style="">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <information-card [information]="textWelcome[0]" (scroll)="scrollTo($event)" [btn1]="uct2019"></information-card>
-      </div>
-      <information-card class="col-12" [information]="moreNews"></information-card>
-<!--      <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome | slice:1:3">-->
-<!--        <information-card [information]="data" (scroll)="scrollTo($event)" [btn1]="uct2019"-->
-<!--                          [btn2]="team"></information-card>-->
-<!--      </div>-->
-    </div>
-
+<div class="perspective" id="perspective">
+  <div class="parallax" id="parallaxMain">
+    <div><img src="./assets/logo_d_1.png" class="logo"></div>
+    <h1 class="parallax-text">Uphill Champion Thun</h1>
 
   </div>
-</div>
 
 
-<!--UCT2019-->
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3442.JPG" style="height: 50vh"><h1
-  class="bigTxt" style="padding: 150px" id="uct2019" #uct2019>Niederhorn Berglauf</h1></div>
-<div class="main-content uct2019">
-  <information-page></information-page>
-</div>
-
-
-<!--Contacts-->
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/DSC08248_2.JPG" style="height: 50vh"><h1
-  class="bigTxt" style="padding: 150px" id="team" #team>Team</h1></div>
-<div class="main-content">
-  <div class="container">
-    <div class="row">
-      <information-card class="col-12" style="margin-bottom: 1em" [titleWithBorder]="true" [information]="aboutUs"></information-card>
-      <ng-container *ngFor="let data of informationTeam">
-        <div class="col-md-3 col-6">
-          <app-contact-card [cardInformation]="data"></app-contact-card>
+  <div class='main-content'>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" *ngIf="textWelcome">
+          <information-card [information]="textWelcome[0]"></information-card>
         </div>
-      </ng-container>
+        <information-card class="col-12" [information]="moreNews"></information-card>
+        <!--      <div class="col-xl-6 col-md-6" *ngFor="let data of textWelcome | slice:1:3">-->
+        <!--        <information-card [information]="data" (scroll)="scrollTo($event)" [btn1]="uct2019"-->
+        <!--                          [btn2]="team"></information-card>-->
+        <!--      </div>-->
+      </div>
+
+
     </div>
   </div>
 
-</div>
+
+  <!--UCT2020-->
+  <div class="parallax" id="uct2020">
+    <h1 class="parallax-text" [ngClass]="{'desktop-heading':!isMobile}">Niederhorn Berglauf</h1>
+  </div>
+  <div class="main-content uct2019">
+    <information-page></information-page>
+  </div>
 
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="./assets/IMG_3263.JPG"
-     style="height: 100vh; position:relative;">
-<!--  <div class="container cont-sponsors">-->
-<!--    <div class="row">-->
-<!--      <div class="col-4 sponsors" id="sponsorOne"></div>-->
-<!--      <div class="col-4 sponsors" id="sponsorTow"></div>-->
-<!--      <div class="col-4 sponsors" id="sponsorSix"></div>-->
-<!--      <div class="col-4 sponsors" id="sponsorFour"></div>-->
-<!--      <div class="col-4 sponsors" id="sponsorFife"></div>-->
-<!--      <div class="col-4 sponsors" id="sponsorThree"></div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <!--Contacts-->
+  <div class="parallax" id="team">
+    <h1 class="parallax-text" [ngClass]="{'desktop-heading':!isMobile}">Team</h1>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <information-card class="col-12" style="margin-bottom: 1em" [titleWithBorder]="true"
+                          [information]="aboutUs"></information-card>
+        <ng-container *ngFor="let data of informationTeam">
+          <div class="col-md-3 col-6">
+            <app-contact-card [cardInformation]="data"></app-contact-card>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--  <div class="parallax" id="parallaxSponsors">-->
+  <!--    <h1 class="parallax-text"></h1>-->
+  <!--    <div class="container cont-sponsors">-->
+  <!--      <div class="row">-->
+  <!--        <div class="col-4 sponsors" id="sponsorOne"></div>-->
+  <!--        <div class="col-4 sponsors" id="sponsorTow"></div>-->
+  <!--        <div class="col-4 sponsors" id="sponsorSix"></div>-->
+  <!--        <div class="col-4 sponsors" id="sponsorFour"></div>-->
+  <!--        <div class="col-4 sponsors" id="sponsorFife"></div>-->
+  <!--        <div class="col-4 sponsors" id="sponsorThree"></div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <app-footer></app-footer>
 </div>

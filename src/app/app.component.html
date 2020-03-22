@@ -1,20 +1,20 @@
-<mat-toolbar color="#ffcc00" class="navbar">
-  <mat-toolbar-row>
-    <a href="/home">
-      <button mat-button class="nav-btn">Home</button>
-    </a>
-    <ng-container *ngIf="home.includes('home')">
-      <button mat-button class="nav-btn" (click)="scrollTo('uct2019')">Niederhorn Berglauf</button>
-      <button mat-button class="nav-btn nav-team" (click)="scrollTo('team')">Team</button>
-    </ng-container>
-    <ng-container *ngIf="!home.includes('home')">
-      <a href="/home?part=uct2019">
-        <button mat-button class="nav-btn">Niederhorn Berglauf</button>
-      </a>
-      <a href="/home?part=team">
-        <button mat-button class="nav-btn nav-team">Team</button>
-      </a>
-    </ng-container>
+<!--<mat-toolbar color="#ffcc00" class="navbar">-->
+<!--  <mat-toolbar-row>-->
+<!--    <a href="/home">-->
+<!--      <button mat-button class="nav-btn">Home</button>-->
+<!--    </a>-->
+<!--    <ng-container *ngIf="home.includes('home')">-->
+<!--      <button mat-button class="nav-btn" (click)="scrollTo('uct2019')">Niederhorn Berglauf</button>-->
+<!--      <button mat-button class="nav-btn nav-team" (click)="scrollTo('team')">Team</button>-->
+<!--    </ng-container>-->
+<!--    <ng-container *ngIf="!home.includes('home')">-->
+<!--      <a href="/home?part=uct2019">-->
+<!--        <button mat-button class="nav-btn">Niederhorn Berglauf</button>-->
+<!--      </a>-->
+<!--      <a href="/home?part=team">-->
+<!--        <button mat-button class="nav-btn nav-team">Team</button>-->
+<!--      </a>-->
+<!--    </ng-container>-->
 <!--    <button mat-button class="nav-btn" [matMenuTriggerFor]="menu">Etappen</button>-->
 <!--    <mat-menu #menu="matMenu">-->
 <!--      <ng-container *ngIf="!home.includes('stages')">-->
@@ -38,9 +38,10 @@
 <!--        <button mat-menu-item (click)="scrollTo('Vesuv')">Etappe 3</button>-->
 <!--      </ng-container>-->
 <!--    </mat-menu>-->
-  </mat-toolbar-row>
-</mat-toolbar>
+<!--  </mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+<app-header>
+  <router-outlet></router-outlet>
+</app-header>
 
-<router-outlet></router-outlet>
-
-<app-footer></app-footer>
+<!--<app-footer></app-footer>-->

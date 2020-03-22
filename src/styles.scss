@@ -1,16 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 *{
   font-family: "Montserrat", sans-serif !important;
 }
 
-
+html {
+  height: 100%;
+  overflow: hidden;
+}
 
 body{
   margin: 0;
   color: #ffffff;
   padding: 0;
+  height: 100%;
+  overflow-x: hidden;
   /*font-family: "Montserrat", sans-serif;*/
 }
 
@@ -18,29 +24,123 @@ p{
   font-size: 16px;
 }
 
+.parallax-text {
+  text-shadow: black 1px 1px 10px;
+  color: white;
+}
+
+/*Parallax*/
+.parallax * {
+  font-weight: normal;
+  text-align: center;
+}
+
+
+.parallax {
+  box-sizing: border-box;
+  min-height: 99vh;
+  padding: 30vw 0 5vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+
+.parallax-small {
+  min-height: 100vh;
+}
+
+.parallax, .parallax:before {
+  background: 50% 50% / cover;
+}
+
+.parallax::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
+}
+
+
+
+.perspective {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+//parallax-images
+@supports not (-webkit-overflow-scrolling: touch) {
+  #parallaxMain::before {
+    background: url("/assets/photos/uct_main.jpg") 0 0 / cover;
+  }
+
+  #uct2020::before {
+    background: url("/assets/photos/uct_finish.JPG") 0 0 / cover;
+  }
+
+  #team::before {
+    background: url("/assets/photos/uct_tree_track.JPG") 0 0 / cover;
+  }
+
+  #parallaxSponsors::before {
+    background: url("/assets/photos/uct_tree_track.JPG") 0 0 / cover;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  #parallaxMain {
+    background: url("/assets/photos/uct_main.jpg") 0 0 / cover;
+  }
+
+  #uct2020 {
+    background: url("/assets/photos/uct_finish.JPG") 0 0 / cover;
+  }
+
+  #team {
+    background: url("/assets/photos/uct_tree_track.JPG") 0 0 / cover;
+  }
+  #parallaxSponsors {
+    background: url("/assets/photos/uct_tree_track.JPG") 0 0 / cover;
+  }
+
+}
+
+
 .mat-card-header-text{
   margin: 0 !important;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(239, 239, 239, 0.31);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #5d5d5d;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #343434;
-}
+///* width */
+//::-webkit-scrollbar {
+//  width: 10px;
+//}
+//
+///* Track */
+//::-webkit-scrollbar-track {
+//  background: rgba(239, 239, 239, 0.31);
+//}
+//
+///* Handle */
+//::-webkit-scrollbar-thumb {
+//  background: #5d5d5d;
+//}
+//
+///* Handle on hover */
+//::-webkit-scrollbar-thumb:hover {
+//  background: #343434;
+//}
 
 .parallax-window h1{
   text-align: center;

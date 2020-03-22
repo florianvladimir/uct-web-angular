@@ -10,7 +10,7 @@ import {ContactCardInformation} from './model/contact-card-text.interface';
 })
 export class ContactCardComponent {
 
-  constructor(private sanitization: DomSanitizer) { }
+  constructor() { }
 
   @Input()
   public cardInformation: ContactCardInformation;

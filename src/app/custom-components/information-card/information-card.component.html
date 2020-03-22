@@ -13,7 +13,10 @@
   <mat-card-actions class="info-card-footer" *ngIf="information.buttonInformation">
     <ng-container *ngFor="let btn of information.buttonInformation">
       <a *ngIf="btn.type==='newPage'" href="{{btn.link}}" target="_blank"><button mat-stroked-button color="warn" class="btn-link-card">{{btn.value}}</button></a>
-      <a *ngIf="btn.type==='thisPage'" href="{{btn.link}}"><button  mat-stroked-button color="warn" class="btn-link-card">{{btn.value}}</button></a>
+      <button *ngIf="btn.type==='thisPage'" mat-stroked-button color="warn" class="btn-link-card"
+              [routerLink]="btn.link"
+              [queryParams]="btn.param != null ? {page: btn.param.value} : null"
+              (click)="scrollTo(btn)">{{btn.value}}</button>
       <button *ngIf="btn.type==='scrollTo'" mat-stroked-button color="warn" class="btn-link-card" (click)="scrollTo(btn.link)">{{btn.value}}</button>
 
     </ng-container>

@@ -9,6 +9,7 @@ export interface InputButtonInfo {
   link: any;
   value: string;
   type: string;
+  param: any
 }
 
 export interface DataInformationCard {

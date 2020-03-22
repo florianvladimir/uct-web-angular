@@ -1,6 +1,7 @@
 import {Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
-import {DataInformationCard, TextInformationCard} from './model/data-information-card.interface';
+import {DataInformationCard, InputButtonInfo, TextInformationCard} from './model/data-information-card.interface';
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {IdScrollService} from "../../services/id-scroll-service/id-scroll.service";
 
 @Component({
   selector: 'information-card',
@@ -43,10 +44,10 @@ export class InformationCardComponent implements OnInit{
   @Input()
   public titleWithBorder: false;
 
-  @Output()
-  scroll = new EventEmitter<Element>();
+  // @Output()
+  // scroll = new EventEmitter<Element>();
 
-  constructor(public element: ElementRef) { }
+  constructor(public element: ElementRef, public idScrollService: IdScrollService) { }
 
   ngOnInit(): void {
   }
@@ -64,13 +65,12 @@ export class InformationCardComponent implements OnInit{
   //
   // }
 
-  scrollTo(link) {
-    if (link === 'btn1') {
-      this.scroll.emit(this.btn1);
-    } else if (link === 'btn2') {
-      this.scroll.emit(this.btn2);
-    }
 
+
+  scrollTo(btn: InputButtonInfo) {
+    if(btn.param){
+      this.idScrollService.scrollTo(btn.param.value, 'smooth');
+    }
   }
 
 }

@@ -1,19 +1,18 @@
 <div class="example-container">
   <mat-toolbar class="navbar">
     <ng-container *ngIf="windowsSizeService.isMobile">
-      <span>Joey Hadorn</span>
+      <span>UCT</span>
 
       <!-- This fills the remaining space of the current row -->
       <span class="fill-space"></span>
       <button mat-icon-button (click)="snav.toggle()" style="float: end">
-        <mat-icon>menu</mat-icon>
+        <fa-icon [icon]="faBars"></fa-icon>
       </button>
-<!--      <h1 class="example-app-name">Responsive App</h1>-->
     </ng-container>
 
     <ng-container *ngIf="!windowsSizeService.isMobile">
       <mat-toolbar-row>
-        <button mat-button class="nav-btn" [routerLink]="['home']" (click)="scrollTo(null)">Home</button>
+        <button mat-button [routerLink]="['home']" (click)="scrollTo(null)">Home</button>
 
         <button mat-button [routerLink]="[nav.link]" [queryParams]="{page: nav.parameter}"
            (click)="scrollTo(nav.parameter)" *ngFor="let nav of navBarItems">{{nav.name}}</button>

@@ -30,7 +30,8 @@ export const ENTRY_CARD: DataInformationCard=
       {
         link: 'http://entry.picoevents.ch/',
         type: 'newPage',
-        value: 'Anmelden'
+        value: 'Anmelden',
+        param: null
       }
     ]
   };

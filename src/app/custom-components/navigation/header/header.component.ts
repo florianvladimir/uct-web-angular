@@ -1,7 +1,8 @@
 import {Component} from '@angular/core';
-import {IdScrollService} from '../../services/id-scroll-service/id-scroll.service';
-import {WindowsSizeService} from '../../services/windows-size-service/windows-size.service';
-import {NAV_BAR_ITEMS} from "../../../assets/constants";
+import {IdScrollService} from '../../../services/id-scroll-service/id-scroll.service';
+import {WindowsSizeService} from '../../../services/windows-size-service/windows-size.service';
+import {NAV_BAR_ITEMS} from "../../../../assets/constants";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-header',
@@ -18,6 +19,8 @@ export class HeaderComponent {
   public navBarItems: NavBarItem[] = NAV_BAR_ITEMS;
 
   public idScrollService: IdScrollService;
+
+  faBars = faBars;
 
 
 

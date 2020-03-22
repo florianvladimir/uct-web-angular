@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-7">
-      <information-card [information]="info" [heightFitParent]="true" [titleWithBorder]="true"></information-card>
+      <information-card *ngIf="info" [information]="info" [heightFitParent]="true" [titleWithBorder]="true"><app-competition-rules></app-competition-rules></information-card>
     </div>
     <div class="col-md-5">
       <small-info-card></small-info-card>

@@ -1,9 +1,12 @@
-.main-content {
+
+.main-content{
+  position: relative;
   width: 100%;
-  /*min-height: 100vh;*/
+  min-height: 100vh;
+  height: max-content;
   background-color: #fcfcfc;
-  color: black;
-  padding: 20px 0;
+  z-index: 1;
+  padding: 1.5em 0;
 }
 
 .parallax-window {
@@ -56,14 +59,13 @@
   padding: 1em;
 }
 
+.desktop-heading{
+  font-size: 4em;
+}
 
 @media only screen and (max-width: 992px) {
   .parallax-window h1{
     padding-top: 20vh;
-  }
-  .bigTxt{
-    font-size: 40px;
-    padding: 150px 3px !important;
   }
   .sponsors{
     background-size: 75%;
