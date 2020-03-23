@@ -149,6 +149,14 @@ p{
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7)
 }
 
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+  background-color: #e25d34;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: rgb(255, 105, 59)
+}
+
+
 .bigTxt{
   font-size: 80px;
 }

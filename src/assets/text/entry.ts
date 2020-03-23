@@ -4,7 +4,7 @@ export const PRICE_CARD: DataInformationCard=
   {
     textInformation:
       {
-        title: 'Preis',
+        title: 'Kategorien & Preise',
         pictureUrl: '',
         pictureAlt: '',
         text: ''

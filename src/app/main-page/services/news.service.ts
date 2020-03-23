@@ -13,8 +13,11 @@ export class NewsService  {
     return this.db.list('news').valueChanges();
   }
 
-  getFullRoute(): Observable<any[]> {
-    return this.http.get<any[]>('assets/data/niederhorn-full-route.json');
+  getRouteElevation(): Observable<any[]> {
+    return this.http.get<any[]>('assets/data/niederhorn-route-elevation.json');
+  }
+  getRoute(): Observable<any[]> {
+    return this.http.get<any[]>('assets/data/niederhorn-route.json');
   }
 
   getUCT2020() {

@@ -67,7 +67,7 @@ export const RACEDATE: DateCardInformation[] = [
 export const ROUTE: DataInformationCard = {
   textInformation: {
     text: '',
-    title: 'Strecke',
+    title: 'Strecken',
     pictureAlt: '',
     pictureUrl: '',
   },

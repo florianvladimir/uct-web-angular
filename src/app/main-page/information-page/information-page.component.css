@@ -36,8 +36,9 @@
 
 
 .price{
-  margin: 0 auto;
-  background-color: #ffffff;
+  border: #aaaaaa 1px solid;
+  padding: 0.25em;
+  border-radius: 2px;
 }
 
 .price-col{
@@ -63,6 +64,12 @@
 
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
+}
+
+
+.raceDetail{
+  font-size: large;
+  text-align: right;
 }
 
 

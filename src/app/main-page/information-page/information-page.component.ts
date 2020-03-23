@@ -1,9 +1,9 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {PROFIL, ROUTE} from '../../text-welcome';
-import {ENTRY_CARD, PRICE_CARD} from "../../../assets/text/entry";
-import {NewsService} from "../services/news.service";
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { PROFIL, ROUTE } from '../../text-welcome';
+import { ENTRY_CARD, PRICE_CARD } from "../../../assets/text/entry";
+import { NewsService } from "../services/news.service";
 import * as Highcharts from 'highcharts';
-import {DataInformationCard} from "../../custom-components/information-card/model/data-information-card.interface";
+import { DataInformationCard } from "../../custom-components/information-card/model/data-information-card.interface";
 import { CompetitionRulesComponent } from 'src/app/competition-rules/competition-rules.component';
 
 declare var require: any;
@@ -38,9 +38,99 @@ export class InformationPageComponent implements OnInit {
 
   price = PRICE_CARD;
 
-  routeData: any[];
+  routeElevationData: any[];
 
-  shortRouteData: any[];
+  public selectedCourse: string = '1';
+
+  public isReduced: boolean = false;
+
+  categories: any[] = [
+    {
+      id: 1,
+      name: {
+        f: 'Seniorinnen Ü40',
+        m: 'Senioren Ü40'
+      },
+      price: {
+        normal: 30,
+        reduced: 20
+      }
+    },
+    {
+      id: 2,
+      name: {
+        f: 'Frauen',
+        m: 'Männer'
+      },
+      price: {
+        normal: 30,
+        reduced: 20
+      }
+    },
+    {
+      id: 3,
+      name: {
+        f: 'Juniorinnen U16',
+        m: 'Junioren U16'
+      },
+      price: {
+        normal: 20,
+        reduced: 20
+      }
+    },
+    {
+      id: 4,
+      name: {
+        f: 'Staffel',
+        m: 'Staffel'
+      },
+      price: {
+        normal: 65,
+        reduced: 55
+      }
+    }
+  ]
+
+  categoryInfos: any[] = [
+
+    {
+      name: 'Hauptlauf',
+      course: [{
+        name: 'Lang',
+        distance: 11.8,
+        elevation: 1470,
+      }],
+      categories: []
+    },
+    {
+      name: 'Kurz',
+      course: [{
+        name: 'Kurz',
+        distance: 4.8,
+        elevation: 400
+      }],
+      categories: []
+    },
+    {
+      name: 'Staffel',
+      course: [{
+        name: '1. Streke',
+        distance: 7,
+        elevation: 1070
+      },
+      {
+        name: '2. Streke',
+        distance: 4.8,
+        elevation: 400
+      }],
+      categories: []
+    }
+
+
+  ]
+
+
+
 
 
   public options: any = {
@@ -49,9 +139,9 @@ export class InformationPageComponent implements OnInit {
       zoomType: 'x',
       panning: true,
       panKey: 'shift',
-      height: 700,
+      height: 500,
       scrollablePlotArea: {
-        minWidth: 600
+        minWidth: 200
       }
     },
     title: {
@@ -154,38 +244,108 @@ export class InformationPageComponent implements OnInit {
 
 
   constructor(public newsService: NewsService) {
+    this.categoryInfos
   }
 
   ngOnInit(): void {
-    this.newsService.getFullRoute().subscribe(value => {
-      this.routeData = [...value];
-      this.shortRouteData = [...this.routeData];
-      this.options.series[0].data = this.routeData;
+    this.newsService.getRouteElevation().subscribe(value => {
+      this.routeElevationData = [...value];
+      this.options.series[0].data = this.routeElevationData;
       Highcharts.chart('altitude', this.options);
     });
     this.newsService.getUCT2020().subscribe(value => {
       this.info = value['generalInfo'];
     });
+    this.addCategories();
   }
+  
 
   setShortRoute(event) {
-    this.options.annotations[0].labels[2].point.x = 9.9;
-    if (event.value === "1") {
-      this.options.series[0].data = this.routeData;
-      Highcharts.chart('altitude', this.options);
-    } else if(event.value === "3" ){
-      this.options.series[0].data = this.routeData.slice(0, 299);
-      Highcharts.chart('altitude', this.options);
-    } else {
-      const tempData  = [];
-      for (let i of this.routeData.slice(299)) {
-        tempData.push([i[0]-7,i[1]]);
-      }
-      this.options.series[0].data =  tempData;
-      this.options.xAxis.accessibility.rangeDescription = "Range: 0 to 4.7km.";
-      this.options.annotations[0].labels[2].point.x = 2.9;
-      Highcharts.chart('altitude', this.options);
+    //Reset relay change lable
+    if (this.options.annotations.length > 1) {
+      this.options.annotations.pop();
     }
+    this.selectedCourse = event.value;
+
+    this.options.annotations[0].labels[2].point.x = 9.9;
+    // Different Categories: 1-Hauptlauf, 2-Kurz,3-Staffel
+    if (event.value === "1") {
+      this.options.series[0].data = this.routeElevationData;
+      Highcharts.chart('altitude', this.options);
+    } else if (event.value === "3") {
+      this.setRelayElevation();
+    } else {
+      this.setShortElevation();
+    }
+  }
+
+  setShortElevation() {
+    const tempData = [];
+    for (let i of this.routeElevationData.slice(299)) {
+      tempData.push([i[0] - 7, i[1]]);
+    }
+    this.options.series[0].data = tempData;
+    this.options.xAxis.accessibility.rangeDescription = "Range: 0 to 4.7km.";
+    this.options.annotations[0].labels[2].point.x = 2.9;
+    Highcharts.chart('altitude', this.options);
+  }
+
+
+  setRelayElevation() {
+    this.options.series[0].data = this.routeElevationData;
+    let newLabel = {
+      labelOptions: {
+        shape: 'connector',
+        align: 'right',
+        justify: false,
+        crop: true,
+        style: {
+          fontSize: '1em',
+          textOutline: '1px white',
+        }
+      },
+      labels: [{
+        point: {
+          xAxis: 0,
+          yAxis: 0,
+          x: 7.0,
+          y: 1582
+        },
+        text: 'Wechsel'
+      }]
+    };
+    this.options.annotations.push(newLabel);
+    Highcharts.chart('altitude', this.options);
+  }
+
+  getCategoryInfos() {
+    return this.categoryInfos[parseInt(this.selectedCourse) - 1].course;
+  }
+
+  addCategories() {
+    // Hauptlauf
+    let temp = this.categoryInfos.filter((value) => {
+      return value.name === 'Hauptlauf'
+    })[0];
+    temp.categories.push(this.getCategoryById(1));
+    temp.categories.push(this.getCategoryById(2));
+
+    // Kurz
+    temp = this.categoryInfos.filter((value) => {
+      return value.name === 'Kurz'
+    })[0];
+    temp.categories.push(this.getCategoryById(2));
+    temp.categories.push(this.getCategoryById(3));
+
+    // Staffel
+    temp = this.categoryInfos.filter((value) => {
+      return value.name === 'Staffel'
+    })[0];
+    temp.categories.push(this.getCategoryById(4));
+  }
+
+  getCategoryById(id) {
+    return this.categories.filter((value) => value.id == id)[0];
   }
 
 }

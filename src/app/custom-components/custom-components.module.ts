@@ -18,6 +18,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {IdScrollService} from "../services/id-scroll-service/id-scroll.service";
 import {WindowsSizeService} from "../services/windows-size-service/windows-size.service";
+import { MyMapComponent } from './my-map/my-map.component';
 
 @NgModule({
   imports: [
@@ -34,8 +35,8 @@ import {WindowsSizeService} from "../services/windows-size-service/windows-size.
     MatSidenavModule,
     MatListModule,
   ],
-  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent, HeaderComponent],
-  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent, HeaderComponent],
+  declarations: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent, HeaderComponent, MyMapComponent],
+  exports: [InformationCardComponent, ContactCardComponent, DateCardComponent, FooterComponent, SmallInfoCardComponent, MapComponent, HeaderComponent, MyMapComponent],
   providers: [IdScrollService, WindowsSizeService]
 })
 export class CustomComponentsModule { }
